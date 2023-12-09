@@ -2130,3 +2130,239 @@ Node: <t t-call-assets="web.assets_backend_prod_only" t-css="false"/>
 2023-12-08 22:23:42,918 5872 INFO albferna werkzeug: 127.0.0.1 - - [08/Dec/2023 22:23:42] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.008
 2023-12-08 22:23:43,168 5872 INFO albferna werkzeug: 127.0.0.1 - - [08/Dec/2023 22:23:43] "POST /sales/sale_quotation_onboarding_panel HTTP/1.1" 200 - 2 0.002 0.012
 2023-12-08 23:00:11,502 5872 INFO albferna werkzeug: 127.0.0.1 - - [08/Dec/2023 23:00:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.016
+2023-12-09 00:22:11,599 5872 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 00:22:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.011
+2023-12-09 01:49:11,457 5872 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:49:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.000
+2023-12-09 01:56:08,647 5872 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-09 01:56:08,647 5872 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-09 01:56:09,054 5872 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 7 connections  
+2023-12-09 01:57:09,253 10048 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-09 01:57:09,253 10048 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-09 01:57:09,253 10048 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-09 01:57:09,254 10048 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-09 01:57:15,507 10048 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-09 01:57:18,353 10048 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-09 01:57:19,511 10048 INFO albferna odoo.modules.loading: loading 1 modules... 
+2023-12-09 01:57:19,544 10048 INFO albferna odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-09 01:57:21,521 10048 INFO albferna odoo.modules.loading: loading 69 modules... 
+2023-12-09 01:57:33,628 10048 INFO albferna odoo.modules.loading: 69 modules loaded in 12.11s, 0 queries (+0 extra) 
+2023-12-09 01:57:34,376 10048 INFO albferna odoo.modules.loading: Modules loaded. 
+2023-12-09 01:57:34,515 10048 INFO albferna odoo.modules.registry: Registry loaded in 15.369s 
+2023-12-09 01:57:34,593 10048 INFO albferna odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-09 01:57:34,664 10048 INFO albferna odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-09 01:57:44,634 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:44] "GET /web HTTP/1.1" 200 - 107 0.793 24.698
+2023-12-09 01:57:44,635 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:44] "GET /web HTTP/1.1" 200 - 88 0.511 11.521
+2023-12-09 01:57:46,857 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:46] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.026 0.064
+2023-12-09 01:57:47,033 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:47] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 6 0.006 0.070
+2023-12-09 01:57:47,535 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:47] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.037
+2023-12-09 01:57:47,591 10048 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-09 01:57:47,692 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:47] "POST /mail/init_messaging HTTP/1.1" 200 - 50 0.253 0.071
+2023-12-09 01:57:48,150 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:57:48] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.031 0.078
+2023-12-09 01:58:00,145 10048 INFO ? werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:00] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 12.660
+2023-12-09 01:58:00,305 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:00] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.008 12.818
+2023-12-09 01:58:00,419 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:00] "POST /web/action/load HTTP/1.1" 200 - 15 0.146 13.825
+2023-12-09 01:58:00,499 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:00] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 36 0.318 12.808
+2023-12-09 01:58:01,270 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:01] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 102 0.253 0.266
+2023-12-09 01:58:01,683 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:01] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.012
+2023-12-09 01:58:01,820 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:01] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 26 0.106 0.047
+2023-12-09 01:58:01,929 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:01] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.006 0.007
+2023-12-09 01:58:02,321 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:02] "POST /sales/sale_quotation_onboarding_panel HTTP/1.1" 200 - 34 0.033 0.136
+2023-12-09 01:58:02,537 10048 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 01:58:02] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 9 0.017 0.026
+2023-12-09 01:58:18,529 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2023-12-09 01:58:19,350 10048 INFO albferna odoo.addons.base.models.ir_attachment: filestore gc 305 checked, 3 removed 
+2023-12-09 01:58:19,788 10048 INFO albferna odoo.addons.base.models.res_users: GC'd 2 user log entries 
+2023-12-09 01:58:19,965 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2023-12-09 01:58:19,966 10048 INFO albferna odoo.models.unlink: User #1 deleted base.language.install records with IDs: [1] 
+2023-12-09 01:58:20,116 10048 INFO albferna odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2023-12-09 01:58:20,263 10048 INFO albferna odoo.models.unlink: User #1 deleted bus.bus records with IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250] 
+2023-12-09 01:58:20,588 10048 INFO albferna odoo.models.unlink: User #1 deleted mail.compose.message records with IDs: [1, 2, 3, 4] 
+2023-12-09 01:58:21,978 10048 INFO albferna odoo.models.unlink: User #1 deleted sale.order.cancel records with IDs: [1] 
+2023-12-09 01:58:22,005 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2023-12-09 01:58:22,060 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Notification: Delete Notifications older than 6 Month`. 
+2023-12-09 01:58:22,125 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Notification: Delete Notifications older than 6 Month` done. 
+2023-12-09 01:58:22,145 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2023-12-09 01:58:22,160 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2023-12-09 01:58:22,179 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Users: Notify About Unregistered Users`. 
+2023-12-09 01:58:22,220 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Users: Notify About Unregistered Users` done. 
+2023-12-09 01:58:22,239 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2023-12-09 01:58:22,250 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2023-12-09 01:58:22,272 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2023-12-09 01:58:22,297 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2023-12-09 01:58:22,316 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2023-12-09 01:58:22,348 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2023-12-09 01:58:22,401 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Digest Emails`. 
+2023-12-09 01:58:23,655 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Digest Emails` done. 
+2023-12-09 01:58:23,679 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 01:58:23,708 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 01:58:23,725 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Gamification: Goal Challenge Check`. 
+2023-12-09 01:58:24,006 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Gamification: Goal Challenge Check` done. 
+2023-12-09 01:58:24,022 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `HR Employee: check work permit validity`. 
+2023-12-09 01:58:24,043 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `HR Employee: check work permit validity` done. 
+2023-12-09 01:58:24,059 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Mail Marketing: Process queue`. 
+2023-12-09 01:58:24,077 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Mail Marketing: Process queue` done. 
+2023-12-09 01:58:24,094 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Project: Send rating`. 
+2023-12-09 01:58:24,106 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Project: Send rating` done. 
+2023-12-09 01:58:24,914 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2023-12-09 02:00:24,155 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 02:00:24,169 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 02:01:24,192 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Account: Post draft entries with auto_post enabled and accounting date up to today`. 
+2023-12-09 02:01:24,206 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Account: Post draft entries with auto_post enabled and accounting date up to today` done. 
+2023-12-09 02:10:24,325 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 02:10:24,325 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 02:19:24,433 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2023-12-09 02:19:24,443 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2023-12-09 02:19:24,460 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2023-12-09 02:19:28,530 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2023-12-09 02:20:28,556 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2023-12-09 02:20:28,564 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2023-12-09 02:20:28,579 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2023-12-09 02:20:28,592 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2023-12-09 02:20:28,605 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2023-12-09 02:20:28,611 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2023-12-09 02:20:28,625 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 02:20:28,639 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 02:30:28,721 10048 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 02:30:28,737 10048 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 02:36:50,253 10048 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\bus\models\bus.py", line 182, in run
+    self.loop()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\bus\models\bus.py", line 167, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2023-12-09 02:36:50,378 10048 INFO albferna odoo.sql_db: Connection to the database failed 
+2023-12-09 02:36:50,378 10048 WARNING albferna odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_cron.py", line 101, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 740, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-2>", line 2, in borrow
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 668, in borrow
+    result = psycopg2.connect(
+  File "C:\Program Files\Odoo 16.0.20231208\python\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  the database system is shutting down
+
+2023-12-09 02:36:50,425 10048 INFO albferna odoo.sql_db: Connection to the database failed 
+2023-12-09 02:36:50,472 10048 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-09 02:36:50,706 10048 WARNING albferna odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_cron.py", line 101, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 740, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-2>", line 2, in borrow
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 668, in borrow
+    result = psycopg2.connect(
+  File "C:\Program Files\Odoo 16.0.20231208\python\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  the database system is shutting down
+
+2023-12-09 02:36:50,706 10048 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-09 02:36:51,097 10048 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2023-12-09 17:13:20,885 7280 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-09 17:13:20,894 7280 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-09 17:13:20,895 7280 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-09 17:13:20,895 7280 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-09 17:13:26,710 7280 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-09 17:13:28,249 7280 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-09 17:18:02,893 7280 INFO albferna odoo.modules.loading: loading 1 modules... 
+2023-12-09 17:18:02,927 7280 INFO albferna odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-09 17:18:04,250 7280 INFO albferna odoo.modules.loading: loading 69 modules... 
+2023-12-09 17:18:11,337 7280 INFO albferna odoo.modules.loading: 69 modules loaded in 7.09s, 0 queries (+0 extra) 
+2023-12-09 17:18:12,638 7280 INFO albferna odoo.modules.loading: Modules loaded. 
+2023-12-09 17:18:12,820 7280 INFO albferna odoo.modules.registry: Registry loaded in 11.510s 
+2023-12-09 17:18:12,823 7280 INFO albferna odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-09 17:18:20,731 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:20] "GET /web HTTP/1.1" 200 - 109 5.247 14.234
+2023-12-09 17:18:22,468 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:22] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 6 0.008 0.138
+2023-12-09 17:18:22,916 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.020 0.099
+2023-12-09 17:18:22,939 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:22] "GET /websocket HTTP/1.1" 101 - 1 0.003 0.099
+2023-12-09 17:18:23,293 7280 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-09 17:18:24,845 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:24] "POST /mail/init_messaging HTTP/1.1" 200 - 50 1.294 0.147
+2023-12-09 17:18:25,228 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:25] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.031 0.016
+2023-12-09 17:18:29,201 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Project: Create Recurring Tasks`. 
+2023-12-09 17:18:29,245 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Project: Create Recurring Tasks` done. 
+2023-12-09 17:18:29,308 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2023-12-09 17:18:29,623 7280 INFO albferna odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2023-12-09 17:18:30,018 7280 INFO albferna odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2023-12-09 17:18:30,292 7280 INFO albferna odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2023-12-09 17:18:30,775 7280 INFO albferna odoo.models.unlink: User #1 deleted bus.bus records with IDs: [251, 252, 253, 254, 255] 
+2023-12-09 17:18:32,782 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2023-12-09 17:18:32,798 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2023-12-09 17:18:32,858 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2023-12-09 17:18:32,877 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2023-12-09 17:18:32,984 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2023-12-09 17:18:33,001 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2023-12-09 17:18:33,033 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2023-12-09 17:18:33,051 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2023-12-09 17:18:33,102 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2023-12-09 17:18:33,121 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2023-12-09 17:18:33,144 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2023-12-09 17:18:33,160 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 17:18:33,216 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 17:18:35,646 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:35] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.024 12.167
+2023-12-09 17:18:35,691 7280 INFO ? werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:35] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 12.205
+2023-12-09 17:18:36,001 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:36] "POST /web/action/load HTTP/1.1" 200 - 15 0.354 13.330
+2023-12-09 17:18:36,561 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:36] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 36 0.918 12.241
+2023-12-09 17:18:37,373 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:37] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 102 0.744 0.305
+2023-12-09 17:18:37,796 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:37] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.008 0.009
+2023-12-09 17:18:38,214 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:38] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 26 0.394 0.043
+2023-12-09 17:18:38,260 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:38] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.005 0.007
+2023-12-09 17:18:38,782 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:38] "POST /sales/sale_quotation_onboarding_panel HTTP/1.1" 200 - 34 0.053 0.117
+2023-12-09 17:18:38,996 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:38] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 9 0.013 0.023
+2023-12-09 17:18:41,054 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:41] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.060 0.020
+2023-12-09 17:18:41,104 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:41] "GET /web/image/res.partner/2/avatar_128 HTTP/1.1" 304 - 7 0.000 0.070
+2023-12-09 17:18:41,178 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:41] "POST /web/dataset/call_kw/mail.channel/channel_fetch_preview HTTP/1.1" 200 - 37 0.315 0.033
+2023-12-09 17:18:47,615 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:47] "POST /web/dataset/call_kw/sale.order/read HTTP/1.1" 200 - 47 0.776 0.080
+2023-12-09 17:18:47,938 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:47] "POST /web/dataset/call_kw/sale.order.line/read HTTP/1.1" 200 - 19 0.271 0.029
+2023-12-09 17:18:48,350 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:48] "POST /web/dataset/call_kw/res.partner/name_get HTTP/1.1" 200 - 6 0.076 0.011
+2023-12-09 17:18:48,795 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:48] "POST /mail/thread/messages HTTP/1.1" 200 - 26 0.148 0.050
+2023-12-09 17:18:48,989 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:48] "POST /mail/thread/data HTTP/1.1" 200 - 24 0.041 0.031
+2023-12-09 17:18:49,487 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:49] "GET /web/bundle/web_editor.assets_wysiwyg?lang=en_US&debug=1 HTTP/1.1" 200 - 11 0.012 0.512
+2023-12-09 17:18:50,233 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:50] "GET /web/image/res.partner/3/avatar_128 HTTP/1.1" 304 - 7 0.008 0.016
+2023-12-09 17:18:51,544 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:51] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.007
+2023-12-09 17:18:51,862 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:51] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.007
+2023-12-09 17:18:51,876 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:51] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.013 0.007
+2023-12-09 17:18:54,756 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:18:54] "POST /web/dataset/call_kw/sale.order/get_metadata HTTP/1.1" 200 - 5 0.021 0.011
+2023-12-09 17:19:04,589 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:04] "POST /web/dataset/call_kw/sale.order/get_metadata HTTP/1.1" 200 - 5 0.004 0.010
+2023-12-09 17:19:10,230 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:10] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 3 0.001 0.031
+2023-12-09 17:19:10,674 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:10] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 20 0.050 0.039
+2023-12-09 17:19:10,845 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:10] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.002 0.006
+2023-12-09 17:19:11,015 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:11] "POST /sales/sale_quotation_onboarding_panel HTTP/1.1" 200 - 2 0.000 0.016
+2023-12-09 17:19:28,811 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:28] "POST /web/dataset/call_kw/ir.model/search HTTP/1.1" 200 - 3 0.003 0.007
+2023-12-09 17:19:29,282 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:29] "POST /web/dataset/call_kw/ir.model.fields/get_views HTTP/1.1" 200 - 28 0.143 0.075
+2023-12-09 17:19:29,345 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:29] "POST /web/dataset/call_kw/ir.model.fields/web_search_read HTTP/1.1" 200 - 6 0.016 0.021
+2023-12-09 17:19:33,242 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2023-12-09 17:19:33,266 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2023-12-09 17:19:33,293 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2023-12-09 17:19:33,309 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2023-12-09 17:19:33,702 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:33] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 20 0.041 0.048
+2023-12-09 17:19:33,871 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:33] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.008
+2023-12-09 17:19:34,055 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:19:34] "POST /sales/sale_quotation_onboarding_panel HTTP/1.1" 200 - 2 0.003 0.010
+2023-12-09 17:20:33,329 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2023-12-09 17:20:33,337 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2023-12-09 17:20:33,351 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2023-12-09 17:20:33,360 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2023-12-09 17:20:33,372 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2023-12-09 17:20:33,380 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2023-12-09 17:20:33,392 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 17:20:33,407 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 17:25:48,200 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:48] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 20 0.019 0.038
+2023-12-09 17:25:48,418 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:48] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.002 0.006
+2023-12-09 17:25:49,730 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:49] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 20 0.012 0.049
+2023-12-09 17:25:50,066 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:50] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.007
+2023-12-09 17:25:53,646 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:53] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 24 0.023 0.045
+2023-12-09 17:25:53,978 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:53] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.008
+2023-12-09 17:30:33,521 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 17:30:33,542 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
