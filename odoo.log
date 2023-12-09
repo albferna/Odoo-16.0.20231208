@@ -2366,3 +2366,5 @@ psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 
 2023-12-09 17:25:53,978 7280 INFO albferna werkzeug: 127.0.0.1 - - [09/Dec/2023 17:25:53] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.008
 2023-12-09 17:30:33,521 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
 2023-12-09 17:30:33,542 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-09 17:40:33,652 7280 INFO albferna odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-09 17:40:33,667 7280 INFO albferna odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
