@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_manage1_task,manage1.task,model_manage1_task,base.group_user,1,1,1,1
+access_manage1_sprint,manage1.sprint,model_manage1_sprint,base.group_user,1,1,1,1
+access_manage1_technology,manage1.technology,model_manage1_technology,base.group_user,1,1,1,1
