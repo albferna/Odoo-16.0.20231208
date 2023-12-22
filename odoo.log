@@ -1,0 +1,25 @@
+2023-12-22 18:00:06,405 7928 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-22 18:00:06,405 7928 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-22 18:00:06,405 7928 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-22 18:00:06,405 7928 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-22 18:00:06,811 7928 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-22 18:00:07,544 7928 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-22 18:00:28,814 7928 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-22 18:00:28,849 7928 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-22 18:00:28,861 7928 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'mimodulo1', defaulting to LGPL-3 
+2023-12-22 18:00:29,041 7928 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'manage1', defaulting to LGPL-3 
+2023-12-22 18:00:29,057 7928 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-22 18:00:32,107 7928 INFO openpg odoo.modules.loading: 96 modules loaded in 3.05s, 0 queries (+0 extra) 
+2023-12-22 18:00:32,417 7928 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-22 18:00:32,417 7928 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-22 18:00:32,624 7928 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-22 18:00:32,655 7928 INFO openpg odoo.modules.registry: Registry loaded in 3.967s 
+2023-12-22 18:00:32,655 7928 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-22 18:00:33,369 7928 INFO openpg werkzeug: 127.0.0.1 - - [22/Dec/2023 18:00:33] "GET /websocket HTTP/1.1" 101 - 22 0.145 4.537
+2023-12-22 18:00:33,408 7928 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-22 18:04:08,195 7928 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-22 18:04:08,226 7928 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-22 18:14:08,318 7928 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-22 18:14:08,349 7928 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-22 18:24:08,493 7928 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-22 18:24:08,493 7928 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
