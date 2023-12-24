@@ -23,3 +23,17 @@
 2023-12-22 18:14:08,349 7928 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
 2023-12-22 18:24:08,493 7928 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
 2023-12-22 18:24:08,493 7928 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-22 18:33:41,665 7928 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-22 18:33:41,677 7928 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-22 18:36:13,656 7928 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-22 18:36:13,657 7928 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-22 18:36:13,705 7928 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2023-12-22 18:36:32,859 7768 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-22 18:36:32,859 7768 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-22 18:36:32,859 7768 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-22 18:36:32,864 7768 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-22 18:36:33,554 7768 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-22 18:36:35,117 7768 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-22 18:37:16,289 7768 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-22 18:37:16,290 7768 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-22 18:37:16,709 7768 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
