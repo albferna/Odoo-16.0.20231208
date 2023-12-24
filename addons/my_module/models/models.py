@@ -20,6 +20,6 @@ class my_module(models.Model):
         # }
     # start_datetime = "Jan 27, 2020 4:36:02 PM GMT+0000"
 
-    @api.depends('value')
+"""     @api.depends('value')
     def _value_pc(self):
-        self.value2 = float(self.value) / 100
+        self.value2 = float(self.value) / 100 """

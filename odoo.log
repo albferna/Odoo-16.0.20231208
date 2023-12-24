@@ -37,3 +37,639 @@
 2023-12-22 18:37:16,289 7768 INFO ? odoo.service.server: Initiating shutdown 
 2023-12-22 18:37:16,290 7768 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2023-12-22 18:37:16,709 7768 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2023-12-24 12:25:47,478 5900 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-24 12:25:47,478 5900 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-24 12:25:47,478 5900 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-24 12:25:47,478 5900 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-24 12:25:52,822 5900 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-24 12:25:55,793 5900 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-24 12:25:57,836 5900 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:25:57,868 5900 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-24 12:25:58,117 5900 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'mimodulo1', defaulting to LGPL-3 
+2023-12-24 12:26:00,616 5900 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'manage1', defaulting to LGPL-3 
+2023-12-24 12:26:00,634 5900 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:26:11,302 5900 INFO openpg odoo.modules.loading: 96 modules loaded in 10.67s, 0 queries (+0 extra) 
+2023-12-24 12:26:11,892 5900 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:26:11,892 5900 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:26:12,197 5900 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-24 12:26:12,330 5900 INFO openpg odoo.modules.registry: Registry loaded in 15.607s 
+2023-12-24 12:26:12,731 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:12,810 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:12,939 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:13,074 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:13,140 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:13,241 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:13,827 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:14,177 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:26:46,622 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 69 1.729 43.836
+2023-12-24 12:26:46,631 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 87 2.765 45.650
+2023-12-24 12:26:46,640 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 106 4.148 45.794
+2023-12-24 12:26:46,646 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 67 2.566 34.666
+2023-12-24 12:26:46,684 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 69 2.500 44.694
+2023-12-24 12:26:46,711 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 72 1.833 44.457
+2023-12-24 12:26:46,741 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 69 1.791 43.596
+2023-12-24 12:26:46,763 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:46] "GET /web HTTP/1.1" 200 - 67 1.736 43.436
+2023-12-24 12:26:50,087 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:50] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 6 0.008 0.181
+2023-12-24 12:26:50,459 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:26:50] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.010
+2023-12-24 12:26:50,969 5900 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-24 12:26:56,583 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Purchase reminder`. 
+2023-12-24 12:26:57,155 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Purchase reminder` done. 
+2023-12-24 12:26:57,159 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Purchase reminder`. 
+2023-12-24 12:26:57,168 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Purchase reminder` done. 
+2023-12-24 12:26:57,191 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Users: Notify About Unregistered Users`. 
+2023-12-24 12:26:57,292 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Users: Notify About Unregistered Users` done. 
+2023-12-24 12:26:57,311 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2023-12-24 12:26:57,415 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2023-12-24 12:26:57,430 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2023-12-24 12:26:57,445 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2023-12-24 12:26:57,516 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2023-12-24 12:26:57,531 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2023-12-24 12:26:57,536 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2023-12-24 12:26:57,559 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2023-12-24 12:26:57,609 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2023-12-24 12:26:57,617 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2023-12-24 12:26:57,631 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `HR Employee: check work permit validity`. 
+2023-12-24 12:26:57,638 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Procurement: run scheduler`. 
+2023-12-24 12:26:57,869 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `HR Employee: check work permit validity` done. 
+2023-12-24 12:26:57,885 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Project: Create Recurring Tasks`. 
+2023-12-24 12:26:57,894 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Project: Create Recurring Tasks` done. 
+2023-12-24 12:26:57,910 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Gamification: Goal Challenge Check`. 
+2023-12-24 12:26:58,492 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Gamification: Goal Challenge Check` done. 
+2023-12-24 12:26:58,506 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Mail Marketing: Process queue`. 
+2023-12-24 12:26:58,653 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Mail Marketing: Process queue` done. 
+2023-12-24 12:26:58,673 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Project: Send rating`. 
+2023-12-24 12:26:58,788 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Project: Send rating` done. 
+2023-12-24 12:26:58,802 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Account: Post draft entries with auto_post enabled and accounting date up to today`. 
+2023-12-24 12:26:59,289 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Account: Post draft entries with auto_post enabled and accounting date up to today` done. 
+2023-12-24 12:26:59,312 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-24 12:26:59,425 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-24 12:26:59,437 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Digest Emails`. 
+2023-12-24 12:27:00,535 5900 INFO openpg odoo.addons.stock.models.stock_orderpoint: A batch of 4 orderpoints is processed and committed 
+2023-12-24 12:27:01,139 5900 INFO openpg odoo.addons.stock.models.stock_rule: A batch of 4 moves are assigned and committed 
+2023-12-24 12:27:01,391 5900 INFO openpg odoo.addons.stock.models.stock_rule: _run_scheduler_tasks is finished and committed 
+2023-12-24 12:27:01,547 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Procurement: run scheduler` done. 
+2023-12-24 12:27:01,571 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Fleet: Generate contracts costs based on costs frequency`. 
+2023-12-24 12:27:01,840 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Fleet: Generate contracts costs based on costs frequency` done. 
+2023-12-24 12:27:01,859 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2023-12-24 12:27:03,808 5900 INFO openpg odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2023-12-24 12:27:04,805 5900 INFO openpg odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2023-12-24 12:27:05,411 5900 INFO openpg odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2023-12-24 12:27:05,693 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Digest Emails` done. 
+2023-12-24 12:27:05,713 5900 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Notification: Delete Notifications older than 6 Month`. 
+2023-12-24 12:27:05,715 5900 INFO openpg odoo.models.unlink: User #1 deleted bus.bus records with IDs: [1096, 1097, 1098, 1099, 1100, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118, 1119, 1120, 1121, 1122] 
+2023-12-24 12:27:05,750 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Notification: Delete Notifications older than 6 Month` done. 
+2023-12-24 12:27:05,905 5900 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-24 12:27:05,906 5900 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-24 12:27:06,411 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:06] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.002 16.848
+2023-12-24 12:27:06,858 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:06] "POST /web/action/load HTTP/1.1" 200 - 15 0.342 16.632
+2023-12-24 12:27:07,343 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:07] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.078 0.050
+2023-12-24 12:27:08,071 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.091
+2023-12-24 12:27:08,107 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 10 0.076 0.056
+2023-12-24 12:27:08,290 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 57 0.291 0.083
+2023-12-24 12:27:08,304 5900 INFO openpg odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2023-12-24 12:27:08,319 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 109 0.982 0.446
+2023-12-24 12:27:08,434 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "POST /mail/init_messaging HTTP/1.1" 200 - 45 0.470 0.049
+2023-12-24 12:27:08,764 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.012
+2023-12-24 12:27:08,835 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "POST /mail/load_message_failures HTTP/1.1" 200 - 12 0.039 0.016
+2023-12-24 12:27:08,948 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:08] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 26 0.144 0.057
+2023-12-24 12:27:09,021 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:09] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.005 0.006
+2023-12-24 12:27:09,465 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:09] "POST /sales/sale_quotation_onboarding_panel HTTP/1.1" 200 - 34 0.050 0.121
+2023-12-24 12:27:09,683 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:09] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 9 0.010 0.024
+2023-12-24 12:27:17,085 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:17] "POST /web/action/load HTTP/1.1" 200 - 11 0.069 0.017
+2023-12-24 12:27:17,422 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:17] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 37 0.077 0.102
+2023-12-24 12:27:17,558 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:17] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.061 0.046
+2023-12-24 12:27:17,778 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:17] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.015
+2023-12-24 12:27:18,612 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:18,613 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:18,642 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.011
+2023-12-24 12:27:18,646 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.014
+2023-12-24 12:27:18,649 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.012
+2023-12-24 12:27:18,667 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.024
+2023-12-24 12:27:18,936 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:18,940 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:18,964 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.011
+2023-12-24 12:27:18,968 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.011
+2023-12-24 12:27:18,976 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.016
+2023-12-24 12:27:18,984 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:18] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:19,257 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:19,262 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:19,280 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:19,319 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2023-12-24 12:27:19,333 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:19,337 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.015
+2023-12-24 12:27:19,582 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:19,585 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:19,611 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:19,655 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:19,656 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:19,669 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.018
+2023-12-24 12:27:19,916 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:19,936 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.003
+2023-12-24 12:27:19,945 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "POST /web/action/load HTTP/1.1" 200 - 10 0.016 0.021
+2023-12-24 12:27:19,988 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:19,993 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:19] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.010
+2023-12-24 12:27:20,029 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.024 0.026
+2023-12-24 12:27:20,252 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.011 0.013
+2023-12-24 12:27:20,255 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:20,263 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2023-12-24 12:27:20,301 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2023-12-24 12:27:20,310 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2023-12-24 12:27:20,347 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:20,568 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.000
+2023-12-24 12:27:20,601 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /base/static/img/icons/social.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:20,605 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:20,624 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:20,627 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:20,666 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2023-12-24 12:27:20,899 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.005
+2023-12-24 12:27:20,916 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:20,920 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:20,943 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:20,945 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:20,978 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:20] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2023-12-24 12:27:21,212 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.000
+2023-12-24 12:27:21,240 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2023-12-24 12:27:21,247 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.010
+2023-12-24 12:27:21,258 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.008
+2023-12-24 12:27:21,261 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2023-12-24 12:27:21,289 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2023-12-24 12:27:21,538 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.003
+2023-12-24 12:27:21,553 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2023-12-24 12:27:21,713 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 4 0.026 0.006
+2023-12-24 12:27:21,903 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:21] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 3 0.000 0.000
+2023-12-24 12:27:22,041 5900 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:27:24,013 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:24] "POST /web/dataset/call_button HTTP/1.1" 200 - 1151 1.082 0.890
+2023-12-24 12:27:27,421 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:27] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.036 0.023
+2023-12-24 12:27:27,701 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:27] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.018
+2023-12-24 12:27:30,074 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:30] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.113 0.031
+2023-12-24 12:27:30,198 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:30] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.010 0.007
+2023-12-24 12:27:30,435 5900 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:30] "GET /base/static/img/country_flags/my.png HTTP/1.1" 200 - 0 0.000 0.037
+2023-12-24 12:27:32,392 5900 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['my_module'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:27:32,393 5900 INFO openpg odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2023-12-24 12:27:32,397 5900 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['my_module'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:27:32,595 5900 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:27:32,614 5900 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-24 12:27:32,673 5900 INFO openpg odoo.modules.loading: updating modules list 
+2023-12-24 12:27:32,675 5900 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-12-24 12:27:34,209 5900 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:27:34,367 5900 INFO openpg odoo.modules.loading: 96 modules loaded in 0.16s, 0 queries (+0 extra) 
+2023-12-24 12:27:34,367 5900 INFO openpg odoo.modules.loading: loading 97 modules... 
+2023-12-24 12:27:34,367 5900 INFO openpg odoo.modules.loading: Loading module my_module (4/97) 
+2023-12-24 12:27:34,451 5900 CRITICAL openpg odoo.modules.module: Couldn't load module my_module 
+2023-12-24 12:27:34,451 5900 CRITICAL openpg odoo.modules.module: invalid syntax (models.py, line 12) 
+2023-12-24 12:27:34,455 5900 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-24 12:27:34,456 5900 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 488, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\__init__.py", line 3, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\models.py", line 12
+    Modificación 1
+                 ^
+SyntaxError: invalid syntax
+2023-12-24 12:27:34,730 5900 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1589, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\service\model.py", line 133, in retrying
+    result = func()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1616, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1820, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 697, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 466, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-76>", line 2, in button_immediate_install
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 74, in check_and_log
+    return method(self, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 468, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 592, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 488, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\__init__.py", line 3, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\models.py", line 12
+    Modificación 1
+                 ^
+SyntaxError: invalid syntax
+2023-12-24 12:27:34,730 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:27:34] "POST /web/dataset/call_button HTTP/1.1" 200 - 1176 0.855 1.494
+2023-12-24 12:27:50,760 5900 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:27:50,783 5900 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-24 12:27:50,814 5900 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:27:50,961 5900 INFO openpg odoo.modules.loading: 96 modules loaded in 0.15s, 0 queries (+0 extra) 
+2023-12-24 12:27:51,231 5900 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:27:51,231 5900 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:27:51,431 5900 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-24 12:27:51,447 5900 INFO openpg odoo.modules.registry: Registry loaded in 0.718s 
+2023-12-24 12:31:04,520 5900 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:31:04,978 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:04] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 6 0.016 0.446
+2023-12-24 12:31:06,569 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:06] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 5 0.016 0.011
+2023-12-24 12:31:06,899 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:06] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 3 0.006 0.006
+2023-12-24 12:31:07,155 5900 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:31:08,803 5900 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:08] "POST /web/dataset/call_button HTTP/1.1" 200 - 1144 0.740 0.914
+2023-12-24 12:31:11,414 5900 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-24 12:31:11,414 5900 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-24 12:31:12,492 5900 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 11 connections  
+2023-12-24 12:31:27,380 5916 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-24 12:31:27,381 5916 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-24 12:31:27,382 5916 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-24 12:31:27,383 5916 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-24 12:31:27,918 5916 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-24 12:31:28,525 5916 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-24 12:31:28,829 5916 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:31:28,849 5916 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-24 12:31:28,863 5916 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'mimodulo1', defaulting to LGPL-3 
+2023-12-24 12:31:29,059 5916 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'manage1', defaulting to LGPL-3 
+2023-12-24 12:31:29,074 5916 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:31:31,815 5916 INFO openpg odoo.modules.loading: 96 modules loaded in 2.74s, 0 queries (+0 extra) 
+2023-12-24 12:31:32,134 5916 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:31:32,135 5916 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:31:32,368 5916 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-24 12:31:32,387 5916 INFO openpg odoo.modules.registry: Registry loaded in 3.771s 
+2023-12-24 12:31:32,450 5916 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:31:32,516 5916 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:31:33,647 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:33] "GET /websocket HTTP/1.1" 101 - 22 0.133 4.902
+2023-12-24 12:31:33,784 5916 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-24 12:31:37,628 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:37] "GET /web HTTP/1.1" 200 - 94 0.371 7.327
+2023-12-24 12:31:39,130 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:39] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 5 0.006 0.049
+2023-12-24 12:31:39,579 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:39] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.020 0.031
+2023-12-24 12:31:39,586 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:39] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.019
+2023-12-24 12:31:40,364 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:40] "POST /mail/init_messaging HTTP/1.1" 200 - 50 0.279 0.053
+2023-12-24 12:31:40,758 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:40] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.031 0.016
+2023-12-24 12:31:41,343 5916 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-24 12:31:41,343 5916 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-24 12:31:41,343 5916 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-24 12:31:41,343 5916 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-24 12:31:41,891 5916 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:41] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 1.681
+2023-12-24 12:31:41,996 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:41] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.009 1.827
+2023-12-24 12:31:42,054 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:42] "POST /web/action/load HTTP/1.1" 200 - 11 0.063 2.922
+2023-12-24 12:31:42,237 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:42] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 59 0.204 1.998
+2023-12-24 12:31:42,510 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:42] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 44 0.064 0.064
+2023-12-24 12:31:42,884 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:42] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.012 0.016
+2023-12-24 12:31:42,942 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:42] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.052 0.039
+2023-12-24 12:31:44,778 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:44] "POST /web/action/load HTTP/1.1" 200 - 10 0.018 0.032
+2023-12-24 12:31:45,135 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:45] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.022 0.023
+2023-12-24 12:31:45,354 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:45] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.006 0.008
+2023-12-24 12:31:46,394 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:46] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 4 0.012 0.012
+2023-12-24 12:31:46,721 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:46] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 3 0.006 0.006
+2023-12-24 12:31:46,988 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:31:48,538 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:48] "POST /web/dataset/call_button HTTP/1.1" 200 - 1142 0.943 0.614
+2023-12-24 12:31:50,820 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:50] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.041 0.027
+2023-12-24 12:31:51,122 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:51] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.006 0.016
+2023-12-24 12:31:53,185 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:53] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.104 0.027
+2023-12-24 12:31:53,322 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:53] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.010 0.008
+2023-12-24 12:31:54,501 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['my_module'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:31:54,502 5916 INFO openpg odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2023-12-24 12:31:54,506 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['my_module'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:31:54,636 5916 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:31:54,652 5916 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-24 12:31:54,713 5916 INFO openpg odoo.modules.loading: updating modules list 
+2023-12-24 12:31:54,715 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-12-24 12:31:56,155 5916 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:31:56,318 5916 INFO openpg odoo.modules.loading: 96 modules loaded in 0.16s, 0 queries (+0 extra) 
+2023-12-24 12:31:56,318 5916 INFO openpg odoo.modules.loading: loading 97 modules... 
+2023-12-24 12:31:56,318 5916 INFO openpg odoo.modules.loading: Loading module my_module (4/97) 
+2023-12-24 12:31:56,340 5916 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-24 12:31:56,726 5916 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:31:56,726 5916 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:31:56,909 5916 INFO openpg odoo.modules.registry: module my_module: creating or updating database tables 
+2023-12-24 12:31:58,139 5916 INFO ? werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:58] "GET /web/static/img/spin.svg HTTP/1.1" 304 - 0 0.000 0.047
+2023-12-24 12:31:58,736 5916 INFO openpg odoo.modules.loading: loading my_module/security/ir.model.access.csv 
+2023-12-24 12:31:58,827 5916 INFO openpg odoo.modules.loading: loading my_module/views/views.xml 
+2023-12-24 12:31:59,143 5916 INFO openpg odoo.modules.loading: loading my_module/views/templates.xml 
+2023-12-24 12:31:59,175 5916 INFO openpg odoo.modules.loading: Module my_module: loading demo 
+2023-12-24 12:31:59,176 5916 INFO openpg odoo.modules.loading: loading my_module/demo/demo.xml 
+2023-12-24 12:31:59,261 5916 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-24 12:31:59,262 5916 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5165, in ensure_one
+    _id, = self._ids
+ValueError: too many values to unpack (expected 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 488, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 258, in load_module_graph
+    cr.commit()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 461, in commit
+    self.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 134, in flush
+    self.transaction.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 875, in flush
+    env_to_flush.flush_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 737, in flush_all
+    self._recompute_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 733, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 6230, in _recompute_field
+    field.recompute(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1369, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1342, in apply_except_missing
+    func(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1391, in compute_value
+    records._compute_field_value(self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 4225, in _compute_field_value
+    fields.determine(field.compute, self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 97, in determine
+    return needle(*args)
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\models.py", line 25, in _value_pc
+    self.value2 = float(self.value) / 100
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1153, in __get__
+    record.ensure_one()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5168, in ensure_one
+    raise ValueError("Expected singleton: %s" % self)
+ValueError: Expected singleton: my_module.my_module(1, 2, 3, 4, 5)
+2023-12-24 12:31:59,453 5916 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5165, in ensure_one
+    _id, = self._ids
+ValueError: too many values to unpack (expected 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1589, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\service\model.py", line 133, in retrying
+    result = func()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1616, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1820, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 697, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 466, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-76>", line 2, in button_immediate_install
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 74, in check_and_log
+    return method(self, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 468, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 592, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 488, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 258, in load_module_graph
+    cr.commit()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 461, in commit
+    self.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 134, in flush
+    self.transaction.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 875, in flush
+    env_to_flush.flush_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 737, in flush_all
+    self._recompute_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 733, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 6230, in _recompute_field
+    field.recompute(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1369, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1342, in apply_except_missing
+    func(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1391, in compute_value
+    records._compute_field_value(self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 4225, in _compute_field_value
+    fields.determine(field.compute, self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 97, in determine
+    return needle(*args)
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\models.py", line 25, in _value_pc
+    self.value2 = float(self.value) / 100
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1153, in __get__
+    record.ensure_one()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5168, in ensure_one
+    raise ValueError("Expected singleton: %s" % self)
+ValueError: Expected singleton: my_module.my_module(1, 2, 3, 4, 5)
+2023-12-24 12:31:59,456 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:31:59] "POST /web/dataset/call_button HTTP/1.1" 200 - 1313 2.402 2.564
+2023-12-24 12:32:40,070 5916 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:32:40,082 5916 INFO openpg odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2023-12-24 12:32:40,113 5916 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:32:40,276 5916 INFO openpg odoo.modules.loading: 96 modules loaded in 0.16s, 0 queries (+0 extra) 
+2023-12-24 12:32:40,546 5916 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:32:40,546 5916 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:32:40,752 5916 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-24 12:32:40,763 5916 INFO openpg odoo.modules.registry: Registry loaded in 0.709s 
+2023-12-24 12:32:53,284 5916 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-24 12:32:53,766 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['my_module'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:32:53,766 5916 INFO openpg odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2023-12-24 12:32:53,770 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['my_module'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-24 12:32:54,041 5916 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:32:54,063 5916 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-24 12:32:54,122 5916 INFO openpg odoo.modules.loading: updating modules list 
+2023-12-24 12:32:54,124 5916 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-12-24 12:32:55,514 5916 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:32:55,661 5916 INFO openpg odoo.modules.loading: 96 modules loaded in 0.15s, 0 queries (+0 extra) 
+2023-12-24 12:32:55,668 5916 INFO openpg odoo.modules.loading: loading 97 modules... 
+2023-12-24 12:32:55,668 5916 INFO openpg odoo.modules.loading: Loading module my_module (4/97) 
+2023-12-24 12:32:55,668 5916 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-24 12:32:55,947 5916 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:32:55,947 5916 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:32:56,134 5916 INFO openpg odoo.modules.registry: module my_module: creating or updating database tables 
+2023-12-24 12:32:56,600 5916 INFO openpg odoo.modules.loading: loading my_module/security/ir.model.access.csv 
+2023-12-24 12:32:56,637 5916 INFO openpg odoo.modules.loading: loading my_module/views/views.xml 
+2023-12-24 12:32:56,751 5916 INFO openpg odoo.modules.loading: loading my_module/views/templates.xml 
+2023-12-24 12:32:56,776 5916 INFO openpg odoo.modules.loading: Module my_module: loading demo 
+2023-12-24 12:32:56,777 5916 INFO openpg odoo.modules.loading: loading my_module/demo/demo.xml 
+2023-12-24 12:32:56,844 5916 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-24 12:32:56,856 5916 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5165, in ensure_one
+    _id, = self._ids
+ValueError: too many values to unpack (expected 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 488, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 258, in load_module_graph
+    cr.commit()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 461, in commit
+    self.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 134, in flush
+    self.transaction.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 875, in flush
+    env_to_flush.flush_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 737, in flush_all
+    self._recompute_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 733, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 6230, in _recompute_field
+    field.recompute(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1369, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1342, in apply_except_missing
+    func(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1391, in compute_value
+    records._compute_field_value(self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 4225, in _compute_field_value
+    fields.determine(field.compute, self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 97, in determine
+    return needle(*args)
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\models.py", line 25, in _value_pc
+    self.value2 = float(self.value) / 100
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1153, in __get__
+    record.ensure_one()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5168, in ensure_one
+    raise ValueError("Expected singleton: %s" % self)
+ValueError: Expected singleton: my_module.my_module(1, 2, 3, 4, 5)
+2023-12-24 12:32:56,862 5916 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5165, in ensure_one
+    _id, = self._ids
+ValueError: too many values to unpack (expected 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1589, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\service\model.py", line 133, in retrying
+    result = func()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1616, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1820, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 697, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 466, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-76>", line 2, in button_immediate_install
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 74, in check_and_log
+    return method(self, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 468, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 592, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 488, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 258, in load_module_graph
+    cr.commit()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 461, in commit
+    self.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\sql_db.py", line 134, in flush
+    self.transaction.flush()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 875, in flush
+    env_to_flush.flush_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 737, in flush_all
+    self._recompute_all()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 733, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 6230, in _recompute_field
+    field.recompute(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1369, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1342, in apply_except_missing
+    func(records)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1391, in compute_value
+    records._compute_field_value(self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 4225, in _compute_field_value
+    fields.determine(field.compute, self)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 97, in determine
+    return needle(*args)
+  File "c:\program files\odoo 16.0.20231208\server\addons\my_module\models\models.py", line 25, in _value_pc
+    self.value2 = float(self.value) / 100
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\fields.py", line 1153, in __get__
+    record.ensure_one()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\models.py", line 5168, in ensure_one
+    raise ValueError("Expected singleton: %s" % self)
+ValueError: Expected singleton: my_module.my_module(1, 2, 3, 4, 5)
+2023-12-24 12:32:56,865 5916 INFO openpg werkzeug: 127.0.0.1 - - [24/Dec/2023 12:32:56] "POST /web/dataset/call_button HTTP/1.1" 200 - 1322 1.250 2.336
+2023-12-24 12:33:40,173 5916 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-24 12:33:40,189 5916 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-24 12:33:40,227 5916 INFO openpg odoo.modules.loading: loading 96 modules... 
+2023-12-24 12:33:40,374 5916 INFO openpg odoo.modules.loading: 96 modules loaded in 0.15s, 0 queries (+0 extra) 
+2023-12-24 12:33:40,653 5916 WARNING openpg odoo.fields: Field manage1.task.technologies: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:33:40,653 5916 WARNING openpg odoo.fields: Field manage1.technology.tasks: unknown parameter 'relation_name', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-12-24 12:33:40,852 5916 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-24 12:33:40,860 5916 INFO openpg odoo.modules.registry: Registry loaded in 0.703s 
+2023-12-24 12:34:28,683 5916 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-24 12:34:28,701 5916 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-24 12:43:40,986 5916 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-24 12:43:40,992 5916 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-24 12:47:07,649 5916 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-24 12:47:07,650 5916 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-24 12:47:07,884 5916 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
