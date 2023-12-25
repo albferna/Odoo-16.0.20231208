@@ -15,7 +15,7 @@ class task(models.Model):
     is_paused = fields.Boolean()
     sprint = fields.Many2one("manage1.sprint", ondelete="set null", help="Sprint Relacionado")
     technologies = fields.Many2many(comodel_name="manage1.technology",
-                                    relation_name="technologies_tasks",
+                                    relation="technologies_tasks",
                                     column1="task_id",
                                     column2="technology_id")
 
@@ -40,7 +40,7 @@ class technology(models.Model):
 
     photo = fields.Image(max_width=200, max_height=200)
     tasks = fields.Many2many(comodel_name="manage1.task",
-                             relation_name="technologies_tasks",
+                             relation="technologies_tasks",
                              column1="technology_id",
                              column2="task_id")
 
