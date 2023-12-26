@@ -11795,3 +11795,48 @@ Exception: Module loading om_hospital failed: file om_hospital\security/ir.model
 2023-12-26 21:25:45,802 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:45] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.002 0.008
 2023-12-26 21:25:46,818 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:46] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.003 0.008
 2023-12-26 21:25:48,969 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:48] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.000 0.007
+2023-12-26 21:31:23,980 8624 INFO openpg odoo.addons.base.models.ir_cron: Starting job `Fleet: Generate contracts costs based on costs frequency`. 
+2023-12-26 21:31:24,088 8624 INFO openpg odoo.addons.base.models.ir_cron: Job `Fleet: Generate contracts costs based on costs frequency` done. 
+2023-12-26 21:33:34,174 8624 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-26 21:33:34,186 8624 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-26 21:36:52,245 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:52] "GET /web HTTP/1.1" 200 - 10 0.009 0.027
+2023-12-26 21:36:53,521 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:53] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 4 0.005 0.016
+2023-12-26 21:36:53,530 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:53] "POST /web/action/load HTTP/1.1" 200 - 9 0.012 0.022
+2023-12-26 21:36:53,938 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:53] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 2 0.002 0.018
+2023-12-26 21:36:53,966 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:53] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.023 0.021
+2023-12-26 21:36:53,968 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:53] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.024
+2023-12-26 21:36:54,191 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:54] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.000 0.006
+2023-12-26 21:36:54,384 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:54] "POST /mail/init_messaging HTTP/1.1" 200 - 32 0.051 0.036
+2023-12-26 21:36:54,437 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:54] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.007 0.022
+2023-12-26 21:36:54,477 8624 INFO ? werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:54] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.019
+2023-12-26 21:36:54,493 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:54] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 21 0.033 0.053
+2023-12-26 21:36:54,514 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:54] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.029 0.031
+2023-12-26 21:36:59,474 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:36:59] "GET /web HTTP/1.1" 200 - 10 0.009 0.026
+2023-12-26 21:37:00,775 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:00] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 4 0.004 0.016
+2023-12-26 21:37:00,783 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:00] "POST /web/action/load HTTP/1.1" 200 - 9 0.011 0.021
+2023-12-26 21:37:01,177 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 2 0.002 0.009
+2023-12-26 21:37:01,204 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.018
+2023-12-26 21:37:01,226 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.018 0.025
+2023-12-26 21:37:01,437 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.000 0.006
+2023-12-26 21:37:01,602 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "POST /mail/init_messaging HTTP/1.1" 200 - 32 0.034 0.037
+2023-12-26 21:37:01,666 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.007 0.020
+2023-12-26 21:37:01,718 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 21 0.033 0.048
+2023-12-26 21:37:01,731 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:01] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.019 0.029
+2023-12-26 21:37:07,566 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:07] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 2 0.000 0.010
+2023-12-26 21:37:07,842 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:07] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.003 0.006
+2023-12-26 21:37:07,933 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:07] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.007
+2023-12-26 21:37:10,072 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:10] "GET /web HTTP/1.1" 200 - 10 0.008 0.030
+2023-12-26 21:37:11,357 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:11] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.017
+2023-12-26 21:37:11,663 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:11] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 2 0.001 0.010
+2023-12-26 21:37:11,757 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:11] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.003 0.005
+2023-12-26 21:37:11,758 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:11] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.001 0.012
+2023-12-26 21:37:12,038 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 4 0.006 0.021
+2023-12-26 21:37:12,060 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.017 0.035
+2023-12-26 21:37:12,576 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 21 0.035 0.053
+2023-12-26 21:37:12,594 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "POST /mail/init_messaging HTTP/1.1" 200 - 32 0.067 0.042
+2023-12-26 21:37:12,606 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.046
+2023-12-26 21:37:12,612 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.009 0.032
+2023-12-26 21:37:12,770 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:37:12] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.014 0.020
+2023-12-26 21:37:15,580 8624 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 21:37:15,580 8624 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 21:37:16,081 8624 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  

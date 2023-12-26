@@ -14,8 +14,8 @@
         <field name="name">hospital.patient.tree</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
-            <form>
-            </form>
+            <tree>
+            </tree>
         </field>
     </record>
 
