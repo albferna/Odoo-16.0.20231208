@@ -13,8 +13,8 @@
                         <field name="age"/>
                         <field name="gender"/>
                         <field name="notes"/>
-                    <group>
-                </sheet/>
+                    </group>
+                </sheet>
             </form>
         </field>
     </record>
