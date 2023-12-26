@@ -5,11 +5,8 @@ from odoo import models, fields, api
 class HospitalPatient(models.Model):
     _name = "hospital.patient"
 
-# class om_hospital(models.Model):
-#     _name = 'om_hospital.om_hospital'
-#     _description = 'om_hospital.om_hospital'
-
-#     name = fields.Char()
+    name = fields.Char(string='Name', required=True)
+    
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
