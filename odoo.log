@@ -6055,3 +6055,306 @@ Traceback (most recent call last):
     from . import models
 ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
 2023-12-26 16:38:40,988 8036 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 16:38:40] "GET /favicon.ico HTTP/1.1" 500 - 11 0.014 0.070
+2023-12-26 16:40:02,025 8036 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 16:40:02,053 8036 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-26 16:40:02,089 8036 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 16:40:02,091 8036 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 16:40:02,096 8036 CRITICAL openpg odoo.modules.module: Couldn't load module om_hospital 
+2023-12-26 16:40:02,096 8036 CRITICAL openpg odoo.modules.module: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py) 
+2023-12-26 16:40:02,099 8036 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-26 16:40:02,099 8036 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:02,101 8036 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1568, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 66, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:02,103 8036 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 16:40:02] "GET /web HTTP/1.1" 500 - 11 0.012 0.076
+2023-12-26 16:40:02,179 8036 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 16:40:02,202 8036 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-26 16:40:02,244 8036 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 16:40:02,246 8036 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 16:40:02,251 8036 CRITICAL openpg odoo.modules.module: Couldn't load module om_hospital 
+2023-12-26 16:40:02,251 8036 CRITICAL openpg odoo.modules.module: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py) 
+2023-12-26 16:40:02,253 8036 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-26 16:40:02,254 8036 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:02,256 8036 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1568, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 66, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:02,258 8036 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 16:40:02] "GET /favicon.ico HTTP/1.1" 500 - 11 0.014 0.079
+2023-12-26 16:40:04,106 8036 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 16:40:04,129 8036 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-26 16:40:04,164 8036 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 16:40:04,165 8036 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 16:40:04,171 8036 CRITICAL openpg odoo.modules.module: Couldn't load module om_hospital 
+2023-12-26 16:40:04,171 8036 CRITICAL openpg odoo.modules.module: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py) 
+2023-12-26 16:40:04,174 8036 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-26 16:40:04,174 8036 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:04,176 8036 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1568, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 66, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:04,179 8036 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 16:40:04] "GET /web HTTP/1.1" 500 - 11 0.014 0.071
+2023-12-26 16:40:04,415 8036 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 16:40:04,430 8036 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-26 16:40:04,462 8036 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 16:40:04,462 8036 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 16:40:04,477 8036 CRITICAL openpg odoo.modules.module: Couldn't load module om_hospital 
+2023-12-26 16:40:04,477 8036 CRITICAL openpg odoo.modules.module: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py) 
+2023-12-26 16:40:04,477 8036 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-26 16:40:04,477 8036 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:04,477 8036 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-8>", line 2, in __getitem__
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'openpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1568, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 66, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\module.py", line 471, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\__init__.py", line 4, in <module>
+    from . import models
+  File "c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py", line 3, in <module>
+    from . import models
+ImportError: cannot import name 'models' from partially initialized module 'odoo.addons.om_hospital.models' (most likely due to a circular import) (c:\program files\odoo 16.0.20231208\server\addons\om_hospital\models\__init__.py)
+2023-12-26 16:40:04,477 8036 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 16:40:04] "GET /favicon.ico HTTP/1.1" 500 - 11 0.000 0.063
+2023-12-26 16:41:10,845 8036 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 16:41:10,846 8036 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 16:41:11,150 8036 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 3 connections  
