@@ -11528,3 +11528,270 @@ om_hospital.access_hospital_patient,access_hospital_patient,om_hospital.model_ho
 2023-12-26 21:21:12,121 2180 INFO ? odoo.service.server: Initiating shutdown 
 2023-12-26 21:21:12,121 2180 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2023-12-26 21:21:12,358 2180 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2023-12-26 21:21:16,116 8788 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-26 21:21:16,116 8788 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-26 21:21:16,116 8788 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-26 21:21:16,116 8788 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-26 21:21:16,555 8788 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-26 21:21:17,134 8788 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-26 21:21:21,623 8788 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 21:21:21,654 8788 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-26 21:21:21,667 8788 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'mimodulo1', defaulting to LGPL-3 
+2023-12-26 21:21:21,667 8788 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-26 21:21:21,714 8788 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'om_hospital', defaulting to LGPL-3 
+2023-12-26 21:21:21,868 8788 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'manage1', defaulting to LGPL-3 
+2023-12-26 21:21:21,868 8788 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 21:21:21,915 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:21,947 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:22,023 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:22,378 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:22,436 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:22,442 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:22,682 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:21:24,771 8788 INFO openpg odoo.modules.loading: 98 modules loaded in 2.90s, 0 queries (+0 extra) 
+2023-12-26 21:21:25,290 8788 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-26 21:21:25,306 8788 INFO openpg odoo.modules.registry: Registry loaded in 3.773s 
+2023-12-26 21:21:25,364 8788 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-26 21:21:25,424 8788 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-26 21:21:26,446 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:26] "GET /websocket HTTP/1.1" 101 - 22 0.062 4.853
+2023-12-26 21:21:26,569 8788 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-26 21:21:30,296 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:30] "GET /web HTTP/1.1" 200 - 94 0.391 7.239
+2023-12-26 21:21:32,018 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:32] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.020 0.028
+2023-12-26 21:21:32,136 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:32] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 5 0.006 0.054
+2023-12-26 21:21:32,407 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:32] "POST /mail/init_messaging HTTP/1.1" 200 - 50 0.123 0.052
+2023-12-26 21:21:32,592 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:32] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.029 0.030
+2023-12-26 21:21:32,597 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:32] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.038
+2023-12-26 21:21:36,070 8788 INFO ? werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:36] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 3.534
+2023-12-26 21:21:36,208 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:36] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.034 3.705
+2023-12-26 21:21:36,209 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:36] "POST /web/action/load HTTP/1.1" 200 - 8 0.023 4.214
+2023-12-26 21:21:36,487 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:36] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 59 0.206 3.815
+2023-12-26 21:21:36,658 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:36] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.057 0.007
+2023-12-26 21:21:49,473 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:49] "POST /web/action/load HTTP/1.1" 200 - 10 0.005 0.022
+2023-12-26 21:21:50,315 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:50] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 64 0.067 0.536
+2023-12-26 21:21:50,981 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:50] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 225 0.325 0.150
+2023-12-26 21:21:51,344 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:51] "POST /web/dataset/call_kw/pos.bill/read HTTP/1.1" 200 - 3 0.009 0.019
+2023-12-26 21:21:51,350 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:51] "POST /web/dataset/call_kw/product.pricelist/read HTTP/1.1" 200 - 5 0.020 0.015
+2023-12-26 21:21:51,353 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:51] "POST /web/dataset/call_kw/pos.payment.method/read HTTP/1.1" 200 - 6 0.013 0.022
+2023-12-26 21:21:52,173 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:52] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.004 0.008
+2023-12-26 21:21:52,647 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:21:52] "POST /base_setup/data HTTP/1.1" 200 - 6 0.008 0.005
+2023-12-26 21:22:07,966 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:07] "POST /web/action/load HTTP/1.1" 200 - 11 0.035 0.020
+2023-12-26 21:22:08,288 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:08] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.054 0.073
+2023-12-26 21:22:08,375 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:08] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.030 0.033
+2023-12-26 21:22:08,653 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:08] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.021
+2023-12-26 21:22:11,111 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:11] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.006 0.024
+2023-12-26 21:22:11,157 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:11] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.057 0.035
+2023-12-26 21:22:13,509 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.113 0.019
+2023-12-26 21:22:13,841 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:13] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.011 0.007
+2023-12-26 21:22:16,555 8788 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['om_hospital'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:22:16,559 8788 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['om_hospital'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:22:16,560 8788 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['om_hospital'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:22:18,127 8788 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:22:18,219 8788 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 21:22:18,250 8788 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-26 21:22:18,346 8788 INFO openpg odoo.modules.loading: updating modules list 
+2023-12-26 21:22:18,346 8788 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-12-26 21:22:19,909 8788 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 21:22:19,911 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:19,911 8788 INFO openpg odoo.modules.loading: Loading module om_hospital (5/98) 
+2023-12-26 21:22:20,033 8788 INFO openpg odoo.modules.registry: module om_hospital: creating or updating database tables 
+2023-12-26 21:22:20,338 8788 INFO openpg odoo.modules.loading: loading om_hospital/security/ir.model.access.csv 
+2023-12-26 21:22:20,512 8788 WARNING openpg odoo.modules.loading: Transient module states were reset 
+2023-12-26 21:22:20,515 8788 ERROR openpg odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 231, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\convert.py", line 759, in convert_file
+    convert_csv_import(cr, module, pathname, fp.read(), idref, mode, noupdate)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\convert.py", line 805, in convert_csv_import
+    raise Exception(_('Module loading %s failed: file %s could not be processed:\n %s') % (module, fname, warning_msg))
+Exception: Module loading om_hospital failed: file om_hospital\security/ir.model.access.csv could not be processed:
+ Unknown value '1 ' for boolean field 'Delete Access'
+2023-12-26 21:22:20,526 8788 ERROR openpg odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 2003, in __call__
+    response = request._serve_db()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1589, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\service\model.py", line 133, in retrying
+    result = func()
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1616, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 1820, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\http.py", line 697, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\web\controllers\dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 466, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-82>", line 2, in button_immediate_upgrade
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 74, in check_and_log
+    return method(self, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 659, in button_immediate_upgrade
+    return self._button_immediate_function(type(self).button_upgrade)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\addons\base\models\ir_module.py", line 592, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 231, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\modules\loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\convert.py", line 759, in convert_file
+    convert_csv_import(cr, module, pathname, fp.read(), idref, mode, noupdate)
+  File "C:\Program Files\Odoo 16.0.20231208\server\odoo\tools\convert.py", line 805, in convert_csv_import
+    raise Exception(_('Module loading %s failed: file %s could not be processed:\n %s') % (module, fname, warning_msg))
+Exception: Module loading om_hospital failed: file om_hospital\security/ir.model.access.csv could not be processed:
+ Unknown value '1 ' for boolean field 'Delete Access'
+2023-12-26 21:22:20,528 8788 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:22:20] "POST /web/dataset/call_button HTTP/1.1" 200 - 2346 1.988 1.997
+2023-12-26 21:22:32,920 8788 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 21:22:32,952 8788 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-26 21:22:32,974 8788 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 21:22:32,974 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:32,989 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:32,989 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:33,005 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:33,021 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:33,021 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:33,036 8788 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:22:33,237 8788 INFO openpg odoo.modules.loading: 98 modules loaded in 0.26s, 0 queries (+0 extra) 
+2023-12-26 21:22:33,776 8788 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-26 21:22:33,776 8788 INFO openpg odoo.modules.registry: Registry loaded in 0.856s 
+2023-12-26 21:23:18,671 8788 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 21:23:18,672 8788 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 21:23:18,874 8788 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2023-12-26 21:23:22,672 8624 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-26 21:23:22,672 8624 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-26 21:23:22,672 8624 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-26 21:23:22,672 8624 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-26 21:23:23,078 8624 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-26 21:23:23,787 8624 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-26 21:23:27,115 8624 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 21:23:27,131 8624 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-26 21:23:27,146 8624 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'mimodulo1', defaulting to LGPL-3 
+2023-12-26 21:23:27,146 8624 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-26 21:23:27,193 8624 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'om_hospital', defaulting to LGPL-3 
+2023-12-26 21:23:27,347 8624 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'manage1', defaulting to LGPL-3 
+2023-12-26 21:23:27,362 8624 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 21:23:27,394 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:27,416 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:27,494 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:27,844 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:27,897 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:27,903 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:28,117 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:23:30,431 8624 INFO openpg odoo.modules.loading: 98 modules loaded in 3.07s, 0 queries (+0 extra) 
+2023-12-26 21:23:30,954 8624 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-26 21:23:30,972 8624 INFO openpg odoo.modules.registry: Registry loaded in 3.951s 
+2023-12-26 21:23:31,040 8624 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-26 21:23:31,124 8624 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-26 21:23:32,127 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:32] "GET /websocket HTTP/1.1" 101 - 22 0.098 5.010
+2023-12-26 21:23:32,264 8624 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-26 21:23:36,276 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:36] "GET /web HTTP/1.1" 200 - 94 0.334 7.921
+2023-12-26 21:23:37,923 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:37] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 13 0.016 0.024
+2023-12-26 21:23:38,053 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:38] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 5 0.007 0.057
+2023-12-26 21:23:38,309 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:38] "POST /mail/init_messaging HTTP/1.1" 200 - 48 0.121 0.046
+2023-12-26 21:23:38,485 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:38] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.029 0.029
+2023-12-26 21:23:38,497 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:38] "GET /websocket HTTP/1.1" 101 - 1 0.004 0.034
+2023-12-26 21:23:41,627 8624 INFO ? werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:41] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 3.197
+2023-12-26 21:23:41,803 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:41] "POST /web/action/load HTTP/1.1" 200 - 11 0.067 3.856
+2023-12-26 21:23:41,860 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:41] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.041 3.443
+2023-12-26 21:23:41,983 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:41] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 59 0.282 3.325
+2023-12-26 21:23:42,111 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:42] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 44 0.151 0.134
+2023-12-26 21:23:42,485 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:42] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.016
+2023-12-26 21:23:42,539 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:42] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.055 0.036
+2023-12-26 21:23:49,377 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:49] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.005 0.015
+2023-12-26 21:23:49,705 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:49] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.045 0.034
+2023-12-26 21:23:49,781 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:49] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.019
+2023-12-26 21:23:52,697 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:52] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.038 0.025
+2023-12-26 21:23:52,972 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:52] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.016
+2023-12-26 21:23:56,608 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.100 0.037
+2023-12-26 21:23:56,742 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:23:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.011 0.008
+2023-12-26 21:24:01,062 8624 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['om_hospital'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:24:01,066 8624 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['om_hospital'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:24:01,066 8624 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['om_hospital'] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:24:02,648 8624 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user aafernandez2005@gmail.com #2 via 127.0.0.1 
+2023-12-26 21:24:02,711 8624 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 21:24:02,742 8624 INFO openpg odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2023-12-26 21:24:02,779 8624 INFO openpg odoo.modules.loading: updating modules list 
+2023-12-26 21:24:02,779 8624 INFO openpg odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-12-26 21:24:04,479 8624 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 21:24:04,481 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:04,482 8624 INFO openpg odoo.modules.loading: Loading module om_hospital (5/98) 
+2023-12-26 21:24:04,596 8624 INFO openpg odoo.modules.registry: module om_hospital: creating or updating database tables 
+2023-12-26 21:24:04,873 8624 INFO openpg odoo.modules.loading: loading om_hospital/security/ir.model.access.csv 
+2023-12-26 21:24:04,906 8624 INFO openpg odoo.modules.loading: loading om_hospital/views/menu.xml 
+2023-12-26 21:24:04,941 8624 INFO openpg odoo.modules.loading: loading om_hospital/views/patient.xml 
+2023-12-26 21:24:04,967 8624 INFO openpg odoo.modules.loading: Module om_hospital: loading demo 
+2023-12-26 21:24:04,967 8624 INFO openpg odoo.modules.loading: loading om_hospital/demo/demo.xml 
+2023-12-26 21:24:05,006 8624 INFO openpg odoo.modules.loading: Module om_hospital loaded in 0.52s, 86 queries (+86 other) 
+2023-12-26 21:24:05,012 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:05,019 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:05,032 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:05,051 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:05,058 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:05,079 8624 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 21:24:05,210 8624 INFO openpg odoo.modules.loading: 98 modules loaded in 0.73s, 86 queries (+86 extra) 
+2023-12-26 21:24:07,238 8624 INFO openpg odoo.modules.registry: verifying fields for every extended model 
+2023-12-26 21:24:09,169 8624 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-26 21:24:09,196 8624 INFO openpg odoo.modules.registry: Registry loaded in 6.517s 
+2023-12-26 21:24:09,197 8624 INFO openpg odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2023-12-26 21:24:09,218 8624 INFO openpg odoo.modules.registry: Registry changed, signaling through the database 
+2023-12-26 21:24:09,221 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:09] "POST /web/dataset/call_button HTTP/1.1" 200 - 3406 3.897 4.285
+2023-12-26 21:24:09,702 8624 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-26 21:24:13,898 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:13] "GET /web HTTP/1.1" 200 - 94 0.100 4.100
+2023-12-26 21:24:14,276 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:14] "GET /web/webclient/load_menus/b550c452b598679f9438bc92c02f5153a2e3bdf59b46f4d4004f0bf883e440f3 HTTP/1.1" 200 - 2 0.001 0.013
+2023-12-26 21:24:15,461 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:15] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 6 0.024 0.046
+2023-12-26 21:24:15,865 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:15] "POST /web/action/load HTTP/1.1" 200 - 9 0.017 0.013
+2023-12-26 21:24:15,892 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:15] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.016
+2023-12-26 21:24:15,924 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:15] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.031 0.041
+2023-12-26 21:24:16,218 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:16] "POST /mail/init_messaging HTTP/1.1" 200 - 50 0.070 0.057
+2023-12-26 21:24:16,437 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:16] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.035 0.014
+2023-12-26 21:24:16,627 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:16] "POST /mail/load_message_failures HTTP/1.1" 200 - 12 0.040 0.023
+2023-12-26 21:24:16,634 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:16] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 60 0.173 0.076
+2023-12-26 21:24:18,997 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:18] "POST /web/action/load HTTP/1.1" 200 - 10 0.015 0.019
+2023-12-26 21:24:19,376 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:19] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 16 0.038 0.025
+2023-12-26 21:24:19,605 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:19] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 3 0.018 0.007
+2023-12-26 21:24:19,732 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:19] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.006
+2023-12-26 21:24:23,526 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:24:23] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 2 0.008 0.009
+2023-12-26 21:24:23,865 8624 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-12-26 21:24:23,881 8624 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-26 21:25:36,242 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:36] "GET /web HTTP/1.1" 200 - 10 0.016 0.026
+2023-12-26 21:25:37,578 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:37] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 4 0.004 0.018
+2023-12-26 21:25:37,587 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:37] "POST /web/action/load HTTP/1.1" 200 - 9 0.013 0.021
+2023-12-26 21:25:38,007 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 2 0.001 0.012
+2023-12-26 21:25:38,053 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.025
+2023-12-26 21:25:38,054 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.013 0.030
+2023-12-26 21:25:38,267 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.001 0.005
+2023-12-26 21:25:38,477 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "POST /mail/init_messaging HTTP/1.1" 200 - 32 0.079 0.040
+2023-12-26 21:25:38,513 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.009 0.021
+2023-12-26 21:25:38,566 8624 INFO ? werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.016
+2023-12-26 21:25:38,629 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.056 0.027
+2023-12-26 21:25:38,696 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:38] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 21 0.154 0.061
+2023-12-26 21:25:41,809 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:41] "POST /web/dataset/call_kw/hospital.patient/get_views HTTP/1.1" 200 - 2 0.002 0.013
+2023-12-26 21:25:42,167 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:42] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.001 0.015
+2023-12-26 21:25:42,168 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:42] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.004 0.009
+2023-12-26 21:25:45,802 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:45] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.002 0.008
+2023-12-26 21:25:46,818 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:46] "POST /web/dataset/call_kw/hospital.patient/web_search_read HTTP/1.1" 200 - 2 0.003 0.008
+2023-12-26 21:25:48,969 8624 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:25:48] "POST /web/dataset/call_kw/hospital.patient/onchange HTTP/1.1" 200 - 1 0.000 0.007
