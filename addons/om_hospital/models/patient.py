@@ -2,8 +2,8 @@
 
 from odoo import models, fields, api
 
-class HospitalPatient2(models.Model):
-    _name = "hospital.patient2"
+class HospitalPatient(models.Model):
+    _name = "hospital.patient"
 
     name = fields.Char(string='Name', required=True)
     
