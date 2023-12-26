@@ -7804,3 +7804,32 @@ om_hospital.access_hospital_patient,access_hospital_patient,om_hospital.model_ho
 2023-12-26 17:01:29,535 9480 INFO ? odoo.service.server: Initiating shutdown 
 2023-12-26 17:01:29,536 9480 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2023-12-26 17:01:29,691 9480 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 7 connections  
+2023-12-26 17:01:33,549 3784 INFO ? odoo: Odoo version 16.0-20231208 
+2023-12-26 17:01:33,549 3784 INFO ? odoo: Using configuration file at C:\Program Files\Odoo 16.0.20231208\server\odoo.conf 
+2023-12-26 17:01:33,549 3784 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo 16.0.20231208\\server\\odoo\\addons', 'c:\\program files\\odoo 16.0.20231208\\sessions\\addons\\16.0', 'c:\\program files\\odoo 16.0.20231208\\server\\addons', 'c:\\program files\\odoo 16.0.20231208\\server\\odoo\\addons'] 
+2023-12-26 17:01:33,549 3784 INFO ? odoo: database: openpg@localhost:5432 
+2023-12-26 17:01:33,948 3784 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo 16.0.20231208\thirdparty\wkhtmltopdf.exe 
+2023-12-26 17:01:34,632 3784 INFO ? odoo.service.server: HTTP service (werkzeug) running on LAPTOP-W10-VAIO:8069 
+2023-12-26 17:01:37,405 3784 INFO openpg odoo.modules.loading: loading 1 modules... 
+2023-12-26 17:01:37,428 3784 INFO openpg odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2023-12-26 17:01:37,439 3784 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'mimodulo1', defaulting to LGPL-3 
+2023-12-26 17:01:37,442 3784 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'my_module', defaulting to LGPL-3 
+2023-12-26 17:01:37,493 3784 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'om_hospital', defaulting to LGPL-3 
+2023-12-26 17:01:37,646 3784 WARNING openpg odoo.modules.module: Missing `license` key in manifest for 'manage1', defaulting to LGPL-3 
+2023-12-26 17:01:37,658 3784 INFO openpg odoo.modules.loading: loading 98 modules... 
+2023-12-26 17:01:37,691 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:37,722 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:37,809 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:38,240 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:38,303 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:38,311 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:38,563 3784 WARNING openpg odoo.models: The model my_module.my_module has no _description 
+2023-12-26 17:01:40,743 3784 INFO openpg odoo.modules.loading: 98 modules loaded in 3.08s, 0 queries (+0 extra) 
+2023-12-26 17:01:41,291 3784 INFO openpg odoo.modules.loading: Modules loaded. 
+2023-12-26 17:01:41,306 3784 INFO openpg odoo.modules.registry: Registry loaded in 4.009s 
+2023-12-26 17:01:41,306 3784 INFO openpg odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-12-26 17:01:41,939 3784 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 17:01:41] "GET /websocket HTTP/1.1" 101 - 22 0.101 4.543
+2023-12-26 17:01:41,973 3784 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-12-26 17:02:05,897 3784 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 17:02:05,898 3784 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 17:02:06,290 3784 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
