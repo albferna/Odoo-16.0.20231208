@@ -11525,3 +11525,6 @@ om_hospital.access_hospital_patient,access_hospital_patient,om_hospital.model_ho
 2023-12-26 21:18:47,433 2180 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:18:47] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 61 0.089 0.087
 2023-12-26 21:18:47,442 2180 INFO ? werkzeug: 127.0.0.1 - - [26/Dec/2023 21:18:47] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.017
 2023-12-26 21:18:47,491 2180 INFO openpg werkzeug: 127.0.0.1 - - [26/Dec/2023 21:18:47] "POST /mail/load_message_failures HTTP/1.1" 200 - 12 0.023 0.046
+2023-12-26 21:21:12,121 2180 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 21:21:12,121 2180 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 21:21:12,358 2180 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
