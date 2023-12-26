@@ -28,3 +28,6 @@
 2023-12-26 23:04:53,265 10616 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
 2023-12-26 23:13:53,393 10616 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
 2023-12-26 23:13:53,420 10616 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-26 23:21:17,510 10616 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 23:21:17,510 10616 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 23:21:18,044 10616 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
