@@ -12306,3 +12306,6 @@ Exception: Module loading om_hospital failed: file om_hospital\security/ir.model
 2023-12-26 21:54:02,923 7076 INFO openpg odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
 2023-12-26 21:54:02,935 7076 INFO openpg odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
 2023-12-26 21:54:02,949 7076 INFO openpg odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-12-26 21:57:23,878 7076 INFO ? odoo.service.server: Initiating shutdown 
+2023-12-26 21:57:23,879 7076 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-12-26 21:57:24,150 7076 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
