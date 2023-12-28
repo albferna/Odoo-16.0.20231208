@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_customize_res_partner_ext,access.customize.res_partner_ext,model_customize_res_partner_ext,base.group_user,1,1,1,1
+access_customize_res_partner_ext,access.customize.res.partner.ext,model_customize_res_partner_ext,base.group_user,1,1,1,1

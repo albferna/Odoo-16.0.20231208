@@ -1,7 +1,7 @@
 from odoo import models, fields, api, _
 
 class CustomizeResPartner(models.Model):
-    _name = 'customize.res_partner_ext'
+    _name = 'customize.res.partner.ext'
 
     # mot_start_date = fields.Date(string='MOT Start Date')
     # mot_exp_date = fields.Date(string='MOT Expiry Date')

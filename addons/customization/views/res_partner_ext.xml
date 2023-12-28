@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
     <record id="res_partner_model_form_extension_view" model="ir.ui.view">
@@ -6,7 +7,7 @@
         <!-- <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/> -->
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//page[4]" position="after">
+            <xpath expr="//page[3]" position="after">
                 <page string="Retenciones">
                     <!-- <field string=" "> -->
                     <field name='company_id'>
