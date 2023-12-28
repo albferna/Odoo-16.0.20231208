@@ -20,5 +20,4 @@
     #         'nacd_core/static/scss/**/*',
     #     ],
 }
-}
 
