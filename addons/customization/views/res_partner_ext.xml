@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
     <record id="res_partner_model_form_extension_view" model="ir.ui.view">
         <field name="name">res.partner.model.form.extension.view</field>
         <field name="model">res.partner</field>
-        <!-- <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/> -->
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//page[3]" position="after">
                 <page string="Retenciones">
                     <!-- <field string=" "> -->
-                    <field name='company_id'>
+                    <!-- <field name='company_id'> -->
                         
                         <tree editable="bottom">
-                            <field>Retención IVA</field>
-                            <field name="dec_legal_iva"/>
+                        <!-- <tree> -->
+                            <!-- <field>Retención IVA</field> -->
+                            <field string="Declaración Legal de IVA" name="dec_legal_iva" />
                             <field name="agen_reten_iva"/>
                             <field name="tasa_reten_iva"/>
 
-                            <field>Retención ISLR</field>
+                            <!-- <field>Retención ISLR</field> -->
                             <field name="agen_reten_ing"/>
                             <field name="soc_person_fis"/>
                             <field name="exen_reten_ing"/>
-
-                            <!-- <field name="mot_service_centre"/> -->
                         </tree>
-                    </field>
+                    <!-- </field> -->
                 </page>
             </xpath>
         </field>
     </record>
-
 </odoo>
