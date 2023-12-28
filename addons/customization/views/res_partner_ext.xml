@@ -7,21 +7,35 @@
         <field name="arch" type="xml">
             <xpath expr="//page[3]" position="after">
                 <page string="Retenciones">
+                    
+                    <group name="container_row_2">
+                        <group name="col-1" string="Retención IVA" priority="1">
+                            <field name="dec_legal_iva" string="Declaración Legal de IVA"/>
+                            <field name="agen_reten_iva" string="Es Agente de Retención (IVA)?"/>
+                            <field name="tasa_reten_iva" string="Tasa de Retención de IVA"/>
+                        </group>
+                        <group name="col-2" string="Retención ISLR" priority="2">
+                            <field name="agen_reten_ing" string="Agente de Retención de Ingresos?"/>
+                            <field name="soc_person_fis" string="¿Es una Sociedad de Personas Físicas?"/>
+                            <field name="exen_reten_ing" string="¿Está Exento de Retención de Ingresos?"/>
+                        </group>
+                    </group>                    
+                    
                     <!-- <field string=" "> -->
                     <!-- <field name='company_id'> -->
                         
-                        <tree editable="bottom">
-                        <!-- <tree> -->
+                        <!-- <tree editable="bottom"> -->
                             <!-- <field>Retención IVA</field> -->
-                            <field string="Declaración Legal de IVA" name="dec_legal_iva" />
+                            <!-- <field name="dec_legal_iva" string="Declaración Legal de IVA"/>
                             <field name="agen_reten_iva"/>
-                            <field name="tasa_reten_iva"/>
+                            <field name="tasa_reten_iva"/> -->
 
-                            <!-- <field>Retención ISLR</field> -->
+                            <!-- <field>Retención ISLR</field>
                             <field name="agen_reten_ing"/>
                             <field name="soc_person_fis"/>
-                            <field name="exen_reten_ing"/>
-                        </tree>
+                            <field name="exen_reten_ing"/> -->
+
+                        <!-- </tree> -->
                     <!-- </field> -->
                 </page>
             </xpath>

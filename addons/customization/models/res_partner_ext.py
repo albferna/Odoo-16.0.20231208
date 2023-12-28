@@ -15,7 +15,8 @@ class CustomizeResPartner(models.Model):
 class ResPartnerInherit(models.Model):
     _inherit = 'res.partner'
     # dec_legal_iva = fields.Boolean(string='Declaración Legal de IVA')
-    dec_legal_iva = fields.Boolean('Declaración Legal de IVA')
+    # dec_legal_iva = fields.Boolean('Declaración Legal de IVA')
+    dec_legal_iva = fields.Boolean()
     agen_reten_iva = fields.Boolean('Es Agente de Retención (IVA)?')
     tasa_reten_iva = fields.Float('Tasa de Retención de IVA')
 
