@@ -6,9 +6,10 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-          <field name='payment.term.id' position="after">
-            <field name='to.check'/>
+          <field name='payment_term_id' position="after">
+            <field name='to_check'/>
           </field>
+        </field>
     </record>
 
   </data>
