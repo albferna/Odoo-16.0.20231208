@@ -1,3 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from . import sale_order, res_partner_ext
+from . import sale_order
+from . import res_partner_ext
