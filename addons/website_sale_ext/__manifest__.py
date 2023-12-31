@@ -27,6 +27,6 @@
         # 'security/ir.model.access.csv',
         'views/sale_order_view.xml',
         'views/website_sale.xml',
-        'views/res_partner.xml',
+        'views/res_partner_view.xml',
     ],
 }
