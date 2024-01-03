@@ -2,7 +2,7 @@ from odoo import models, fields, api, _
 
 class CustomizeResPartner(models.Model):
     _name = 'customize.res.partner.ext'
-
+    _description = 'CustomizeResPartnerExt'
 
 class ResPartnerInherit(models.Model):
     _inherit = 'res.partner'
