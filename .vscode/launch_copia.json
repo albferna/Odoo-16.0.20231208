@@ -16,6 +16,7 @@
             "args": [
                 "--config=${workspaceRoot}\\odoo.conf",
             ],
+            
             "cwd": "${workspaceRoot}",
             "env": {},
             "envFile": "${workspaceRoot}/.env",
