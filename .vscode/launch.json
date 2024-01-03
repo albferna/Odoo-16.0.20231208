@@ -15,8 +15,7 @@
             "program": "${workspaceRoot}\\odoo-bin",
             //            "program": "C:\\Program Files\\Odoo 16.0.20231208\\python\\odoo-bin",
             "args": [
-                "--config=${workspaceRo
-                ot}\\odoo.conf",
+                "--config=${workspaceRoot}\\odoo.conf",
                 "--update=${workspaceRoot}\\addons\\estate",
             ],
             // "cwd": "${workspaceRoot}",
