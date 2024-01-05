@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'CRM',
+    'name': 'Real Estate Ads',
     'version': '0.1',
     'category': 'Sales/CRM',
     'sequence': 15,
@@ -28,8 +28,7 @@
     ],
     'data': [
         # 'security/crm_security.xml',
-        # 'security/ir.model.access.csv',
-
+        'security/ir.model.access.csv',
         # 'data/crm_lead_prediction_data.xml',
         # 'data/crm_lost_reason_data.xml',
         # 'data/crm_stage_data.xml',
@@ -65,10 +64,10 @@
         # 'data/crm_lead_demo.xml',
     # ],
     # 'css': ['static/src/css/crm.css'],
-    # 'installable': True,
+    'installable': True,
     # ----------------------------
     # Para convertir en aplicación
-    # 'application': True,      
+    'application': True,      
     # ----------------------------
     # 'auto_install': False
 }
