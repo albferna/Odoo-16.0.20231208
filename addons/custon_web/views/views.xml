@@ -1,60 +1,18 @@
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="custon_web.list">
-      <field name="name">custon_web list</field>
-      <field name="model">custon_web.custon_web</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
--->
+    <record id="custon_view2" model="ir.ui.view">
+        <field name="name">custon.view2</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
 
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="custon_web.action_window">
-      <field name="name">custon_web window</field>
-      <field name="res_model">custon_web.custon_web</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
+        <field name="arch" type="xml">
 
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="custon_web.action_server">
-      <field name="name">custon_web server</field>
-      <field name="model_id" ref="model_custon_web_custon_web"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
+            <xpath expr="//sheet" position="inside">
+                <group>
 
-    <!-- Top menu item -->
-<!--
-    <menuitem name="custon_web" id="custon_web.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="custon_web.menu_1" parent="custon_web.menu_root"/>
-    <menuitem name="Menu 2" id="custon_web.menu_2" parent="custon_web.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="custon_web.menu_1_list" parent="custon_web.menu_1"
-              action="custon_web.action_window"/>
-    <menuitem name="Server to list" id="custon_web" parent="custon_web.menu_2"
-              action="custon_web.action_server"/>
--->
-  </data>
+                    <field name="field_float"/>
+
+                </group>
+            </xpath>
+        </field>
+    </record>
 </odoo>

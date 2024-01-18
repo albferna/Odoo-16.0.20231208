@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "AFF Cursos",
+    'author': "AFF Curso",
     'website': "https://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'stock', 'mrp'],
+    'depends': ['base', 'stock', 'mrp', 'sale'],
 
     # always loaded
     'data': [
