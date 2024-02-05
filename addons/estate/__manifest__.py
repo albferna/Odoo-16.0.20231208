@@ -14,7 +14,7 @@
     'description': "AAF - This is a testing module",
     'website': 'https://www.odoo.com/page/crm',
     'depends': [
-        'base_setup',
+        'base',
         # 'sales_team',
         # 'mail',
         # 'calendar',
@@ -30,7 +30,10 @@
         # 'security/crm_security.xml',
         'security/ir.model.access.csv',
         'views/property_view.xml',
+        'views/property_type_view.xml',
+        'views/property_tag_view.xml',
         'views/menu_items.xml',
+        
         
         # 'data/crm_lead_prediction_data.xml',
         # 'data/crm_lost_reason_data.xml',
@@ -72,5 +75,6 @@
     # Para convertir en aplicación
     'application': True,      
     # ----------------------------
+    'License': 'LGPL-3',    
     # 'auto_install': False
 }
