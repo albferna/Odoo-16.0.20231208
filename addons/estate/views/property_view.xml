@@ -68,7 +68,10 @@
                                 <group>
                                     <field name='sales_id'/>
                                     <field name='buyer_id'/>
+<<<<<<< HEAD
                                     <field name='phone'/>
+=======
+>>>>>>> 6c9adb6cd5cc93877e24294b9a6f557870305869
                                 </group>
                             </page>
                         </notebook>
