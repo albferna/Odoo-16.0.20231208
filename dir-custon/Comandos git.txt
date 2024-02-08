@@ -1,0 +1,15 @@
+git clone -b -----rama------- https://github.com/STySA/jumbok.git
+            (nombre-rama)     (repositorio github)
+
+
+git add .
+
+git commit -m "Curso Cap 4.8"
+
+git branch ver-javascript
+-- crear rama (local)              ---> Opcional
+
+git push -u https://github.com/albferna/Odoo-16.0.20231208.git Prueba
+            --------- Repositorio -----------                  --rama--
+
+

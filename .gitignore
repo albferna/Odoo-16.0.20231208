@@ -1,3 +1,7 @@
 odoo.log
 *.pyc
+debian/*
+doc/*
 Modulos/*
+odoo/*
+setup/*
