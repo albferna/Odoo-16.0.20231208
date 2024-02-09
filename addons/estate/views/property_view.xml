@@ -6,7 +6,7 @@
             <field name="name">Property</field>
             <field name="res_model">estate.property.offer</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="estate_property_tree_view"/>
+            <field name="domain">[('property_id', '=', active_id)]</field>
         </record>
 
         <record id="estate_property_tree_view" model="ir.ui.view">
@@ -34,16 +34,18 @@
                         <button name="action_sold" type="object" string="Sold" class='btn btn-primary'/>
                         <button name="action_cancel" type="object" string="cancel" class='btn btn-danger'/>
                         <field name='state' widget='statusbar'/>
-                        <!-- <field name='state' widget='statusbar' statusbar_visible='new,received'/> VER SOLO NEW y RECEIVED-->
+                        <!-- <field name='state' widget='statusbar' statusbar_visible='new,received'/> PARA VER SOLO NEW y RECEIVED-->
                     </header>
                     <sheet>
-                        <!-- Nueva etiqueta -->
-                        <div class='oe.button.box' name='button.box'>
-                            <button class='oe.stat.button' name='%(real_estate_ads.)d' object='action'>
-                                <field name='offer_count' string='Offers' widget='statinfo'/>
-                            </button>
-                        </div>
-
+                        <group>
+                            <!-- Nueva etiqueta -->
+                            <!-- <div class='oe.button.box' name='button.box'> -->
+                            <div class='oe_inline oe_stat_button' name='button.box'>
+                                <button class='oe.stat.button' name='action_property_view_offers' type='object'>
+                                    <field name='offer_count' string='Offers' widget='statinfo'/>
+                                </button>
+                            </div>
+                        </group>
                         <group>
                             <field name='name'/>
                             <field name='tag_ids' widget='many2many_tags'/>

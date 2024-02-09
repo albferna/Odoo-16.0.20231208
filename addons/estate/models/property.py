@@ -72,6 +72,15 @@ class EstateProperty(models.Model):
 
     offer_count = fields.Integer(string='Offer Count', compute=_compute_offer_count)
 
+    def action_property_view_offers(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'name': f"{self.name} - Offers",
+            'domain': [('property_id', '=', self.id)],
+            'view_mode': 'tree',
+            'res_model': 'estate.property.offer',
+        }
+
 class PropertyType(models.Model):
     _name = "estate.property.type"
     _description = "Property Type"
