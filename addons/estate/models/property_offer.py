@@ -3,15 +3,20 @@
 
 from odoo import fields, models, api
 from datetime import timedelta
-<<<<<<< HEAD
 from odoo.exceptions import ValidationError
-=======
->>>>>>> 6c9adb6cd5cc93877e24294b9a6f557870305869
-
 class PropertyOffer(models.Model):
     _name = "estate.property.offer"
     _description = "Property / Offers"
 
+    @api.depends('property_id', 'partner_id')
+    def _compute_name(self):
+        for rec in self:
+            if rec.property_id and rec.partner_id:
+                rec.name = f"{rec.property_id.name} - {rec.partner_id.name}"
+            else:
+                rec.name = False
+
+    name = fields.Char(string="Descripction", compute=_compute_name)
     price = fields.Float(string="Price", required=True)
     status = fields.Selection(
         string="Status",
@@ -36,7 +41,6 @@ class PropertyOffer(models.Model):
                 rec.deadline = rec.creation_date + timedelta(days=rec.validity)
             else:
                 rec.deadline = False
-<<<<<<< HEAD
 
     def _inverse_deadline(self):
         for rec in self:
@@ -58,15 +62,11 @@ class PropertyOffer(models.Model):
             if rec.deadline <= rec.creation_date:
                 raise ValidationError("DeadLine cannot be before creation date") 
 
+    # def write(self, vals):
+    #     print(vals)
+    #     return super(PropertyOffer, self).write(vals)
+
     # Este cron corre todos los días           
     # @api.autovacuum 
     # def _clean_offers(self):
-    #     self.search([('status', '=', 'refused')]).unlink()       
-=======
-    def _inverse_deadline(self):
-        for rec in self:
-            rec.validity = (rec.deadline - rec.creation_date).days
-            
-    
-    
->>>>>>> 6c9adb6cd5cc93877e24294b9a6f557870305869
+    #     self.search([('status', '=', 'refused')]).unlink()

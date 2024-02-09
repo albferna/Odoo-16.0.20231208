@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data> 
+
+        <record id="action_property_view_offers" model="ir.actions.act_window">
+            <field name="name">Property</field>
+            <field name="res_model">estate.property.offer</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="estate_property_tree_view"/>
+        </record>
+
         <record id="estate_property_tree_view" model="ir.ui.view">
             <field name="name">estate_property_tree</field>
             <field name="model">estate.property</field>
@@ -22,11 +30,25 @@
             <field name="model">estate.property</field>
             <field name="arch" type="xml">
                 <form>
+                    <header>
+                        <button name="action_sold" type="object" string="Sold" class='btn btn-primary'/>
+                        <button name="action_cancel" type="object" string="cancel" class='btn btn-danger'/>
+                        <field name='state' widget='statusbar'/>
+                        <!-- <field name='state' widget='statusbar' statusbar_visible='new,received'/> VER SOLO NEW y RECEIVED-->
+                    </header>
                     <sheet>
+                        <!-- Nueva etiqueta -->
+                        <div class='oe.button.box' name='button.box'>
+                            <button class='oe.stat.button' name='%(real_estate_ads.)d' object='action'>
+                                <field name='offer_count' string='Offers' widget='statinfo'/>
+                            </button>
+                        </div>
+
                         <group>
                             <field name='name'/>
                             <field name='tag_ids' widget='many2many_tags'/>
                             <group>
+                                <!-- <field name='state'/> -->
                                 <field name='type_id'/>
                                 <field name='postcode'/>
                                 <field name='date_availability'/>
@@ -68,10 +90,7 @@
                                 <group>
                                     <field name='sales_id'/>
                                     <field name='buyer_id'/>
-<<<<<<< HEAD
                                     <field name='phone'/>
-=======
->>>>>>> 6c9adb6cd5cc93877e24294b9a6f557870305869
                                 </group>
                             </page>
                         </notebook>

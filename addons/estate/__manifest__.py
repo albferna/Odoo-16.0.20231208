@@ -34,12 +34,10 @@
         'views/property_tag_view.xml',
         'views/menu_items.xml',
         
-<<<<<<< HEAD
         # data files
         # 'data/property_type.xml',
         'data/estate.property.type.csv',
-=======
-        
+
         # 'data/crm_lead_prediction_data.xml',
         # 'data/crm_lost_reason_data.xml',
         # 'data/crm_stage_data.xml',
@@ -68,7 +66,7 @@
         # 'report/crm_activity_report_views.xml',
         # 'report/crm_opportunity_report_views.xml',
         # 'views/crm_team_views.xml',
->>>>>>> 6c9adb6cd5cc93877e24294b9a6f557870305869
+
     ],
      'demo': [
          'demo/property_tag.xml',

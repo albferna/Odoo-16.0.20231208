@@ -9,6 +9,16 @@ class EstateProperty(models.Model):
     type_id = fields.Many2one('estate.property.type', string="Property Type")
 
     name = fields.Char(required=True, string="Name")
+    state = fields.Selection(
+        string="Status",
+        selection=[
+             ('new', 'New'), 
+             ('received', 'Offer Received'), 
+             ('accepted', 'Offer Accepted'), 
+             ('sold', 'Sold'), 
+             ('cancel', 'cancelled')], 
+        default='new')
+
     description = fields.Text()
     postcode = fields.Char()
     date_availability = fields.Date(string="Available From")
@@ -28,12 +38,12 @@ class EstateProperty(models.Model):
         help="Garden Orientation is used to describe cardinal points")
     offer_ids = fields.One2many('estate.property.offer', 'property_id', string="Offers")
     sales_id = fields.Many2one('res.users', string="Salesman")
-<<<<<<< HEAD
+
     buyer_id = fields.Many2one('res.partner', string="Buyer", domain=[('is_company', '=', True)]) 
     phone = fields.Char(string="Phone", related='buyer_id.phone')
-=======
+
     buyer_id = fields.Many2one('res.partner', string="Buyer") 
->>>>>>> 6c9adb6cd5cc93877e24294b9a6f557870305869
+
 
     @api.depends('living_area', 'garden_area')
     def _compute_total_area(self):
@@ -48,6 +58,20 @@ class EstateProperty(models.Model):
 
     # total_area = fields.Integer(string="Total Area")
     # Fin Usando onchange -----
+
+    def action_sold(self):
+        self.state = 'sold'
+
+    def action_cancel(self):
+            self.state = 'cancel'
+
+    @api.depends('offer_ids')
+    def _compute_offer_count(self):
+        for rec in self:
+            rec.offer_count = len(rec.offer_ids)
+
+    offer_count = fields.Integer(string='Offer Count', compute=_compute_offer_count)
+
 class PropertyType(models.Model):
     _name = "estate.property.type"
     _description = "Property Type"
