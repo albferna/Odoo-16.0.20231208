@@ -23,8 +23,8 @@ class EstateProperty(models.Model):
     postcode = fields.Char()
     date_availability = fields.Date(string="Available From")
     expected_price = fields.Float(required=True)
-    best_offer = fields.Float(string="Best Offer")
-    selling_price = fields.Float(string="Selling Price")
+    best_offer = fields.Float(string="Best Offer", compute='_compute_best_price')
+    selling_price = fields.Float(string="Selling Price", readonly=True)
     bedrooms = fields.Integer()
     living_area = fields.Integer()
     facades = fields.Integer()
@@ -80,6 +80,15 @@ class EstateProperty(models.Model):
             'view_mode': 'tree',
             'res_model': 'estate.property.offer',
         }
+    
+    @api.depends('offer_ids')
+    def _compute_best_price(self):
+        for rec in self:
+            if rec.offer_ids:
+                rec.best_offer = max(rec.offer_ids.mapped('price'))
+            else:
+                rec.best_offer = 0
+
 
 class PropertyType(models.Model):
     _name = "estate.property.type"
@@ -92,3 +101,4 @@ class PropertyTag(models.Model):
     _description = "Property Tag"
     
     name = fields.Char(required=True, string="Name")
+    color = fields.Integer(string="Color")
