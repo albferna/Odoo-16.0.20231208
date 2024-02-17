@@ -4,8 +4,22 @@
 from odoo import fields, models, api
 from datetime import timedelta
 from odoo.exceptions import ValidationError
+
+    # Example of absract model
+# class TransientOffer(models.TransientModel):
+#     _name = 'transient.model.offer'
+#     _description = 'Transient Offers'
+#     _transient_max_count = 0   # 0 significa infinito
+
+#     @api.autovacuum
+#     def _transient_vacuum(self):
+#         return super()._transient_vacuum()
+
+
+#     partner_email = fields.Char(string='Email')
+#     partner_phone = fields.Char(string='Phone Number')
 class PropertyOffer(models.Model):
-    _name = "estate.property.offer"
+    _name = ["estate.property.offer"]
     _description = "Property / Offers"
 
     @api.depends('property_id', 'partner_id')
@@ -86,6 +100,7 @@ class PropertyOffer(models.Model):
                 'selling_price': 0,
                 'state': 'received'
             })
+
 
     # def write(self, vals):
     #     print(vals)
