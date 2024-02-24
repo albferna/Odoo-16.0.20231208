@@ -1,190 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
 
-<form string="Partners">
-                <div class="alert alert-warning oe_edit_only" role="alert" name="warning_tax" invisible="not same_vat_partner_id">
-                  A partner with the same <span><span class="o_vat_label">Tax ID</span></span> already exists (<field name="same_vat_partner_id"/>), are you sure to create a new one?
-                </div>
-                <div class="alert alert-warning oe_edit_only" role="alert" name="warning_company" invisible="not same_company_registry_partner_id">
-                  A partner with the same <span><span class="o_vat_label">Company Registry</span></span> already exists (<field name="same_company_registry_partner_id"/>), are you sure to create a new one?
-                </div>
-                <sheet>
-                    <div class="oe_button_box" name="button_box"/>
-                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
-                    <field name="avatar_128" invisible="1"/>
-                    <field name="image_1920" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;: &quot;avatar_128&quot;}"/>
-                    <div class="oe_title mb24">
-                        <field name="is_company" invisible="1"/>
-                        <field name="commercial_partner_id" invisible="1"/>
-                        <field name="active" invisible="1"/>
-                        <field name="company_id" invisible="1"/>
-                        <field name="country_code" invisible="1"/>
-                        <field name="company_type" widget="radio" options="{'horizontal': true}"/>
-                        <h1>
-                            <field id="company" options="{'line_breaks': False}" widget="text" class="text-break" name="name" default_focus="1" placeholder="e.g. Lumber Inc" invisible="not is_company" required="type == 'contact'"/>
-                            <field id="individual" options="{'line_breaks': False}" widget="text" class="text-break" name="name" default_focus="1" placeholder="e.g. Brandom Freeman" invisible="is_company" required="type == 'contact'"/>
-                        </h1>
-                        <div class="o_row">
-                            <field name="parent_id" widget="res_partner_many2one" placeholder="Company Name..." domain="[('is_company', '=', True)]" context="{'default_is_company': True, 'show_vat': True, 'default_user_id': user_id}" invisible="((is_company and not parent_id) or company_name) and company_name != ''"/>
-                                <field name="company_name" invisible="not company_name or company_name == '' or is_company"/>
-                                <button name="create_company" icon="fa-plus-square" string="Create company" type="object" class="oe_edit_only btn-link" invisible="is_company or company_name == '' or not company_name"/>
+<template id="index" name="Our References">
+    <t t-call="website.layout">
+        <div id="wrap">
+            <div class="oe_structure">
+                <section>
+                    <h1 class="text-center">
+                        Our References
+                    </h1><h2 class="text-center text-muted">
+                        Trusted by millions worldwide
+                    </h2>
+                </section>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mb32" id="ref_left_column">
+                    </div>
+                    <div class="col-lg-8 offset-lg-1" id="ref_content">
+                        <div class='d-flex m-2'>
+                            <t t-call="website.pager">
+                               <t t-set="classname" t-value="'float-left'"/>
+                            </t>
+                            <form action="" method="get" class="navbar-search ml-auto pagination form-inline">
+                                <div class="form-group">
+                                    <input type="text" name="search" class="search-query form-control"
+                                        placeholder="Search" t-att-value="post.get('search', '')"/>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div>
+
+                    <p t-if="not partners">No result found</p>
+                    <t t-foreach="partners" t-as="partner">
+                        <div class="media mt-3">
+                            <a t-attf-href="/customers/#{slug(partner)}"
+                               t-field="partner.avatar_128"
+                               class="d-block mr-3 text-center o_width_128"
+                               t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_128_max"}'
+                            ></a>
+                            <div class="media-body" style="min-height: 64px;">
+                                <a t-attf-href="/customers/#{slug(partner)}">
+                                    <span t-field="partner.display_name"/>
+                                </a>
+                                <t t-if="partner.industry_id">
+                                    <a class="badge badge-secondary" t-attf-href="/customers/#{ 'industry/%s/' % slug(partner.industry_id) }#{ current_country_id and 'country/%s' % slug(current_country) or '' }" t-esc="partner.industry_id.name"/>
+                                </t>
+                                <div t-field="partner.website_short_description"/>
+                            </div>
+                        </div>
+                    </t>
                         </div>
                     </div>
 
-                    <group>
-                        <group>
-                            <span class="o_form_label o_td_label" name="address_name">
-                                <field name="type" invisible="is_company" readonly="user_ids" required="not is_company" class="fw-bold"/>
-                                <b invisible="not is_company">Address</b>
-                            </span>
-                            <div class="o_address_format">
-                                <field name="street" placeholder="Street..." class="o_address_street" readonly="type == 'contact' and parent_id"/>
-                                <field name="street2" placeholder="Street 2..." class="o_address_street" readonly="type == 'contact' and parent_id"/>
-                                <field name="city" placeholder="City" class="o_address_city" readonly="type == 'contact' and parent_id"/>
-                                <field name="state_id" class="o_address_state" placeholder="State" options="{'no_open': True, 'no_quick_create': True}" readonly="type == 'contact' and parent_id" context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"/>
-                                <field name="zip" placeholder="ZIP" class="o_address_zip" readonly="type == 'contact' and parent_id"/>
-                                <div name="partner_address_country" class="d-flex justify-content-between">
-                                    <field name="country_id" placeholder="Country" class="o_address_country" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" readonly="type == 'contact' and parent_id"/>
-                                </div>
-                            </div>
-                            <field name="vat" placeholder="e.g. BE0477472701" readonly="parent_id"/>
-                        </group>
-                        <group>
-                            <field name="function" placeholder="e.g. Sales Director" invisible="is_company"/>
-                            <field name="phone" widget="phone"/>
-                            <field name="mobile" widget="phone"/>
-                            <field name="user_ids" invisible="1"/>
-                            <field name="email" widget="email" context="{'gravatar_image': True}" required="user_ids"/>
-                            <field name="website" string="Website" widget="url" placeholder="e.g. https://www.odoo.com"/>
-                            <field name="title" options="{&quot;no_open&quot;: True}" placeholder="e.g. Mister" invisible="is_company"/>
-                            <field name="active_lang_count" invisible="1"/>
-                            <field name="lang" invisible="active_lang_count &lt;= 1"/>
-                            <field name="category_id" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}" placeholder="e.g. &quot;B2B&quot;, &quot;VIP&quot;, &quot;Consulting&quot;, ..."/>
-                        </group>
-                    </group>
+                </div>
+            </div>
+            <div class="oe_structure"/>
+        </div>
+    </t>
+</template>
 
-                    <notebook colspan="4">
-                        <page string="Contacts &amp; Addresses" name="contact_addresses" autofocus="autofocus">
-                            <field name="child_ids" mode="kanban" context="{'default_parent_id': id, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_lang': lang, 'default_user_id': user_id, 'default_type': 'other'}">
-                                <kanban>
-                                    <field name="id"/>
-                                    <field name="color"/>
-                                    <field name="name"/>
-                                    <field name="title"/>
-                                    <field name="type"/>
-                                    <field name="email"/>
-                                    <field name="parent_id"/>
-                                    <field name="is_company"/>
-                                    <field name="function"/>
-                                    <field name="phone"/>
-                                    <field name="street"/>
-                                    <field name="street2"/>
-                                    <field name="zip"/>
-                                    <field name="city"/>
-                                    <field name="country_id"/>
-                                    <field name="mobile"/>
-                                    <field name="state_id"/>
-                                    <field name="image_128"/>
-                                    <field name="avatar_128"/>
-                                    <field name="lang"/>
-                                    <!-- fields in form x2many view to diminish requests -->
-                                    <field name="comment"/>
-                                    <field name="display_name"/>
-                                    <templates>
-                                        <t t-name="kanban-box">
-                                            <t t-set="color" t-value="kanban_color(record.color.raw_value)"/>
-                                            <div t-att-class="color + (record.title.raw_value == 1 ? ' oe_kanban_color_alert' : '') + ' oe_kanban_global_click'">
-                                                <div class="o_kanban_image">
-                                                    <img alt="Contact image" t-att-src="kanban_image('res.partner', 'avatar_128', record.id.raw_value)"/>
-                                                </div>
-                                                <div class="oe_kanban_details">
-                                                    <field name="name"/>
-                                                    <div t-if="record.function.raw_value"><field name="function"/></div>
-                                                    <div t-if="record.email.raw_value"><field name="email" widget="email"/></div>
-                                                    <div t-if="record.type.raw_value != 'contact'">
-                                                        <div>
-                                                            <field name="zip"/><t t-if="record.city"> </t>
-                                                            <field name="city"/>
-                                                        </div>
-                                                        <field t-if="record.state_id.raw_value" name="state_id"/><t t-if="record.country_id"> </t>
-                                                        <field name="country_id"/>
-                                                    </div>
-                                                    <div t-if="record.phone.raw_value">Phone: <t t-esc="record.phone.value"/></div>
-                                                    <div t-if="record.mobile.raw_value">Mobile: <t t-esc="record.mobile.value"/></div>
-                                                </div>
-                                            </div>
-                                        </t>
-                                    </templates>
-                                </kanban>
-                                <form string="Contact / Address">
-                                    <sheet>
-                                        <field name="type" required="1" widget="radio" options="{'horizontal': true}"/>
-                                        <field name="parent_id" invisible="1"/>
-                                        <div class="text-muted oe_edit_only">
-                                            <p class="mb-0" invisible="type != 'contact'">
-                                                <span>Use this to organize the contact details of employees of a given company (e.g. CEO, CFO, ...).</span>
-                                            </p>
-                                            <p class="mb-0" invisible="type != 'invoice'">
-                                                <span>Preferred address for all invoices. Selected by default when you invoice an order that belongs to this company.</span>
-                                            </p>
-                                            <p class="mb-0" invisible="type != 'delivery'">
-                                                <span>Preferred address for all deliveries. Selected by default when you deliver an order that belongs to this company.</span>
-                                            </p>
-                                            <p class="mb-0" invisible="type != 'other'">
-                                                <span>Other address for the company (e.g. subsidiary, ...)</span>
-                                            </p>
-                                        </div>
-                                        <hr/>
-                                        <group>
-                                            <group>
-                                                <field name="name" string="Contact Name" required="type == 'contact'"/>
-                                                <field name="title" options="{'no_open': True}" placeholder="e.g. Mr." invisible="type != 'contact'"/>
-                                                <field name="function" placeholder="e.g. Sales Director" invisible="type != 'contact'"/>
-                                                <label for="street" string="Address" invisible="type == 'contact'"/>
-                                                <div invisible="type == 'contact'">
-                                                    <div class="o_address_format" name="div_address">
-                                                        <field name="street" placeholder="Street..." class="o_address_street"/>
-                                                        <field name="street2" placeholder="Street 2..." class="o_address_street"/>
-                                                        <field name="city" placeholder="City" class="o_address_city"/>
-                                                        <field name="state_id" class="o_address_state" placeholder="State" options="{'no_open': True, 'no_quick_create': True}" context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"/>
-                                                        <field name="zip" placeholder="ZIP" class="o_address_zip"/>
-                                                        <field name="country_id" placeholder="Country" class="o_address_country" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"/>
-                                                    </div>
-                                                </div>
-                                            </group>
-                                            <group>
-                                                <field name="email" widget="email"/>
-                                                <field name="phone" widget="phone"/>
-                                                <field name="mobile" widget="phone"/>
-                                                <field name="company_id" invisible="1"/>
-                                            </group>
-                                        </group>
-                                        <group>
-                                            <field name="comment" placeholder="Internal notes..." nolabel="1" colspan="2"/>
-                                        </group>
-                                        <field name="lang" invisible="True"/>
-                                        <field name="user_id" invisible="True"/>
-                                    </sheet>
-                                </form>
-                            </field>
-                        </page>
-                        <page name="sales_purchases" string="Sales &amp; Purchase">
-                            <group name="container_row_2">
-                                <group string="Sales" name="sale" priority="1">
-                                    <field name="user_id" widget="many2one_avatar_user" domain="[('share', '=', False)]"/>
-                                </group>
-                                <group string="Purchase" name="purchase" priority="2">
-                                </group>
-                                <group name="misc" string="Misc">
-                                    <field name="company_registry" invisible="parent_id"/>
-                                    <field name="ref" string="Reference"/>
-                                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" readonly="parent_id" force_save="1"/>
-                                    <field name="industry_id" invisible="not is_company" options="{'no_create': True}"/>
-                                </group>
-                            </group>
-                        </page>
-                        <page name="internal_notes" string="Internal Notes">
-                            <field name="comment" placeholder="Internal notes..."/>
-                        </page>
-                    </notebook>
-                </sheet>
-                </form>
-                
+<!-- Option: left column: World Map -->
+<template id="opt_country" inherit_id="website_customer.index" customize_show="True" name="Show Map">
+    <xpath expr="//div[@id='ref_left_column']" position="inside">
+        <t t-if="google_maps_api_key">
+            <!-- modal for large map -->
+            <div role="dialog" class="modal fade customer_map_modal" tabindex="-1">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title">World Map</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+                    </header>
+                    <iframe t-attf-src="/google_map/?width=898&amp;height=485&amp;partner_ids=#{ google_map_partner_ids }&amp;partner_url=/customers/"
+                    style="width:898px; height:485px; border:0; padding:0; margin:0;"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- modal end -->
+            <h3>World Map<button class="btn btn-link" data-toggle="modal" data-target=".customer_map_modal"><span class="fa fa-external-link" role="img" aria-label="External link" title="External link"/></button></h3>
+            <ul class="nav">
+                <iframe t-attf-src="/google_map?width=260&amp;height=240&amp;partner_ids=#{ google_map_partner_ids }&amp;partner_url=/customers/"
+                    style="width:260px; height:240px; border:0; padding:0; margin:0;" scrolling="no"></iframe>
+            </ul>
+        </t>
+    </xpath>
+</template>
+
+<template id="opt_industry_list" inherit_id="website_customer.index" customize_show="True" name="Filter on Industry" priority="20">
+    <xpath expr="//div[@id='ref_left_column']" position="inside">
+        <h3>References by Industries</h3>
+        <ul class="nav nav-pills flex-column mt16 mb32">
+            <t t-foreach="industries" t-as="industry_dict">
+                <t t-if="industry_dict['industry_id']">
+                    <li class="nav-item">
+                        <a t-attf-href="/customers/#{ industry_dict['industry_id'][0] and 'industry/%s/' % slug(industry_dict['industry_id']) or '' }#{ current_country_id and 'country/%s' % current_country_id or '' }#{ search_path }"
+                           t-attf-class="nav-link#{industry_dict['industry_id'][0] == current_industry_id and ' active' or ''}">
+                            <span class="badge badge-pill float-right" t-esc="industry_dict['industry_id_count'] or '0'"/>
+                            <t t-esc="industry_dict['industry_id'][1]"/>
+                        </a>
+                    </li>
+                </t>
+            </t>
+        </ul>
+    </xpath>
+</template>
+
+<template id="opt_country_list" inherit_id="website_customer.index" customize_show="True" name="Filter on Countries" priority="30">
+    <xpath expr="//div[@id='ref_left_column']" position="inside">
+        <h3>References by Country</h3>
+        <ul class="nav nav-pills flex-column mt16 mb32">
+            <t t-foreach="countries" t-as="country_dict">
+                <t t-if="country_dict['country_id']">
+                    <li class="nav-item">
+                        <a t-attf-href="/customers/#{ current_industry_id and 'industry/%s/' % slug(current_industry) or '' }#{ country_dict['country_id'][0] and 'country/%s' % slug(country_dict['country_id']) or '' }#{ search_path }"
+                           t-attf-class="nav-link#{country_dict['country_id'][0] == current_country_id and ' active' or ''}">
+                            <span class="badge badge-pill float-right" t-esc="country_dict['country_id_count'] or '0'"/>
+                            <t t-esc="country_dict['country_id'][1]"/>
+                        </a>
+                    </li>
+                </t>
+            </t>
+        </ul>
+    </xpath>
+</template>
+
+
+<template id="opt_tag_list" inherit_id="website_customer.index" customize_show="True" name="Filter on Tags" priority="40">
+    <xpath expr="//div[@id='ref_left_column']" position="inside">
+
+        <h3 t-if="len(tags)">References by Tag</h3>
+        <ul class="nav nav-pills flex-column mt16 mb32" t-if="len(tags)">
+            <li class="nav-item"><a class="nav-link mr8" t-attf-href="/customers/#{ current_industry_id and 'industry/%s/' % slug(current_industry) or '' }#{ current_country_id and 'country/%s' % slug(current_country) or '' }">
+                <span class="fa fa-1x fa-tags"/> All </a></li>
+            <li t-foreach="tags" t-as="o_tag" class="nav-item">
+                <a t-attf-class="nav-link badge badge-#{o_tag.classname}" t-esc="o_tag.name" t-att-style="tag and tag.id==o_tag.id and 'text-decoration: underline'"
+                    t-attf-href="/customers/#{ current_industry_id and 'industry/%s/' % slug(current_industry) or '' }#{ current_country_id and 'country/%s' % slug(current_country) or '' }?tag_id=#{slug(o_tag)}"/>
+            </li>
+        </ul>
+    </xpath>
+</template>
+
+<template id="contact_edit_options" inherit_id="website.user_navbar" name="Edit Customer Options">
+    <xpath expr="//div[@id='edit-page-menu']" position="after">
+        <t t-if="main_object._name == 'res.partner'" t-set="action" t-value="'contacts.action_contacts'"/>
+    </xpath>
+</template>
+
+<template id="details" name="Customer Detail">
+  <t t-call="website.layout">
+    <div id="wrap">
+        <div class="oe_structure" id="oe_structure_website_customer_details_1"/>
+        <div class="container mt16">
+            <div class="row">
+                <div class="col-lg-5">
+                    <ol t-if="not edit_page" class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/customers">Our References</a></li>
+                        <li class="breadcrumb-item active"><span t-field="partner.display_name"/></li>
+                    </ol>
+                </div>
+                <t t-call="website_partner.partner_detail">
+                    <t t-set="left_column">
+                        <div id="left_column"><t t-call="website_customer.implemented_by_block"/></div>
+                    </t>
+                    <t t-set="right_column">
+                        <div id="right_column"><t t-call="website_customer.references_block"/></div>
+                    </t>
+                </t>
+            </div>
+        </div>
+        <div class="oe_structure" id="oe_structure_website_customer_details_2"/>
+    </div>
+  </t>
+</template>
+
+<template id="partner_details" inherit_id="website_partner.partner_page" name="Partner Detail Columns">
+ <xpath expr="//t[@t-call='website_partner.partner_detail']" position="inside">
+    <t t-set="left_column"><div id="left_column"><t t-call="website_customer.implemented_by_block"/></div></t>
+    <t t-set="right_column"><div id="right_column"><t t-call="website_customer.references_block"/></div></t>
+ </xpath>
+</template>
+
+<template id="partner_detail" inherit_id="website_partner.partner_detail" name="Partner Details">
+    <xpath expr="//address" position="inside">
+        <t t-if="partner.industry_id">
+            <span class="badge badge-secondary"><t t-esc="partner.industry_id.name"/></span>
+        </t>
+    </xpath>
+</template>
+
+<template id="implemented_by_block" name="Partner Implemented By Block">
+        <t t-if="partner.assigned_partner_id and partner.assigned_partner_id.website_published">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Implemented By</h4>
+                </div>
+                <div class="card-body text-center">
+        <h4>
+            <a t-attf-href="/partners/#{slug(partner.assigned_partner_id)}">
+              <span t-field="partner.assigned_partner_id"/>
+              <span class="small"> (<t t-esc="len([p for p in partner.assigned_partner_id.implemented_partner_ids if p.website_published])"/> reference(s))</span>
+            </a>
+        </h4>
+        <div><a t-attf-href="/partners/#{slug(partner.assigned_partner_id)}"
+                t-field="partner.assigned_partner_id.avatar_128"
+                class="d-block"
+                t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_128_max"}'
+             />
+        </div>
+        <address class="text-left">
+             <div t-field="partner.assigned_partner_id" t-options='{
+                 "widget": "contact",
+                 "fields": ["address", "website", "phone", "email"]
+             }'/>
+        </address>
+                </div>
+            </div>
+        </t>
+</template>
+
+<template id="references_block" name="Partner References Block">
+        <t t-if="any(p.website_published for p in partner.implemented_partner_ids)">
+            <h3 id="references">References</h3>
+            <div t-foreach="partner.implemented_partner_ids" t-as="reference" class="media mt-3">
+              <t t-if="reference.website_published">
+                <a t-attf-href="/customers/#{slug(reference)}">
+                    <span t-field="reference.avatar_128" class="d-block mr-3 text-center o_width_128" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_128_max"}'/>
+                </a>
+                <div class="media-body" style="min-height: 64px;">
+                    <a t-attf-href="/customers/#{slug(reference)}">
+                        <span t-field="reference.self"/>
+                    </a>
+                    <t t-if="reference.industry_id">
+                        <span class="badge badge-secondary"><t t-esc="reference.industry_id.name"/></span>
+                    </t>
+                    <div t-field='reference.website_short_description'/>
+                </div>
+              </t>
+            </div>
+        </t>
+</template>
+
+<template id="references_block_href" inherit_id="website_crm_partner_assign.references_block" name="Partner References Block">
+    <xpath expr="//div/span" position="replace">
+        <a t-attf-href="/customers/#{slug(reference)}">$0</a>
+    </xpath>
+    <xpath expr="//div[hasclass('media-body')]/span" position="replace">
+        <a t-attf-href="/customers/#{slug(reference)}">$0</a>
+    </xpath>
+</template>
+
+</odoo>
