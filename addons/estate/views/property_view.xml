@@ -40,6 +40,17 @@
             </field>          
         </record>
 
+        <record id="estate_property_graph_view" model="ir.ui.view">
+            <field name="name">estate_property_graph</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <graph>
+                    <field name='name'/>
+                    <field name='selling_price' type='measure'/>
+                </graph>
+            </field>          
+        </record>
+
         <record id="estate_property_search_view" model="ir.ui.view">
             <field name="name">estate_property_search</field>
             <field name="model">estate.property</field>
@@ -105,6 +116,18 @@
                         <field name="name"/>
                     </group>
                 </form>
+            </field>
+        </record>
+
+        <record id="estate_property_calendar_view" model="ir.ui.view">
+            <field name="name">estate_property_calendar</field>
+            <field name="model">estate.property</field>
+            <field name="arch" type="xml">
+                <calendar date_start="date_availability" string="Properties" mode="month" event_open_popup="true" quick_add="false">
+                    <field name="name"/>        
+                    <field name="date_availability"/>
+                    <field name="postcode"/>
+                </calendar>
             </field>
         </record>
 
@@ -187,7 +210,7 @@
         <record id="action_property" model="ir.actions.act_window">
             <field name="name">Property</field>
             <field name="res_model">estate.property</field>
-            <field name="view_mode">kanban,pivot,tree,form</field>
+            <field name="view_mode">kanban,graph,calendar,pivot,tree,form</field>
             <field name="view_id" ref="estate_property_kanban_view"/>
         </record>
     </data>
