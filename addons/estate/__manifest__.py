@@ -80,6 +80,6 @@
     # Para convertir en aplicación
     'application': True,      
     # ----------------------------
-    'License': 'LGPL-3',    
+        'License': 'LGPL-3',    
     # 'auto_install': False
 }
